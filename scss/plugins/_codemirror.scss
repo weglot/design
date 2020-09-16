@@ -1,0 +1,48 @@
+@import '~codemirror/lib/codemirror.css';
+@import '~codemirror/theme/base16-light.css';
+
+
+.CodeMirror {
+  height: auto;
+  min-height: unset !important;
+  padding: $input-btn-padding-y-lg 0;
+  border: 1px solid #E0E5E9;
+  border-radius: $border-radius !important;
+  font-family: "Inter";
+
+  .CodeMirror-scroll {
+    max-height: 100% !important;
+    min-height: unset !important;
+  }
+}
+
+.codemirrorEditor .CodeMirror {
+  border-radius: 0 !important;
+}
+
+.CodeMirror-lines {
+  font-size: 13px; // $small-font-size is 12px
+}
+
+/** Overwrite for base16-light theme */
+
+.CodeMirror .cm-s-base16-light {
+  background-color: $grayish;
+  max-height: 100% !important;
+}
+
+.cm-s-base16-light {
+  span.cm-tag {
+    color: $blue-bright !important;
+  }
+
+  span.cm-attribute {
+    color: $green !important;
+  }
+
+  span.cm-string {
+    color: #F38600 !important;
+  }
+}
+/** End base16-light theme */
+

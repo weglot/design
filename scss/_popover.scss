@@ -1,0 +1,20 @@
+.popover {
+  border-radius: 10px;
+  border: 1px solid #E4E4E4;
+  font:inherit;
+
+  &.bs-popover-top > .arrow::before,
+    &.bs-popover-auto[x-placement^="top"] > .arrow::before {
+    border-top-color: #E4E4E4;
+  }
+}
+.popover-header {
+  background-color: #FFFFFF;
+  border-bottom: none;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.popover-body p {
+  font-size: 13px;
+}

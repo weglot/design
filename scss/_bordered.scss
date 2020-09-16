@@ -1,0 +1,24 @@
+.bordered {
+  padding: 0.45rem 0.8rem;
+}
+
+@each $color, $value in $theme-colors {
+  .bordered-#{$color} {
+    border-radius: $btn-border-radius;
+    border: 1px solid $color;
+  }
+}
+
+.bordered-light {
+  border-radius: $btn-border-radius;
+  border: 1px solid #E0E5E9;
+}
+
+.bordered-card-light {
+  @include border-radius($card-border-radius);
+  border: 1px solid #E0E5E9;
+}
+
+.rounded {
+  border-radius: 5px !important;
+}

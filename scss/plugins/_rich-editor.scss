@@ -1,0 +1,118 @@
+$node-colors: #ffeceb, #d2deec, #dbf0e7, #d6f9d7, #efdfc7;
+
+.rich-node {
+  background-color: #d8d8d8;
+  &.active {
+    background-color:darken(#d8d8d8, 10%);
+  }
+}
+
+@each $current-color in $node-colors {
+  $i: index($node-colors, $current-color);
+  .rich-node#{$i} {
+    background-color: $current-color;
+    &.active {
+      background-color:darken($current-color, 10%);
+    }
+  }
+}
+
+.rendered-html {
+
+  * {
+    padding: .07rem 5px .12rem !important;
+    line-height: 1.5rem;
+    border-radius: 10px !important;
+    font-weight: inherit;
+    font-size:inherit;
+    font-family:inherit;
+    font-style: normal;
+    text-decoration: none;
+    color: inherit;
+    position: inherit;
+    box-shadow: none;
+  }
+
+  *:before, *:after {
+    content: none; // remove quotes when using <cite> tag
+  }
+
+  strong, b {
+    font-weight: inherit;
+  }
+
+  em, i {
+    font-style: normal;
+  }
+
+  a, a:visited, a:hover {
+    cursor: text;
+  }
+}
+
+textarea.rendered-html {
+  border: none !important;
+  min-width: 100% !important;
+  color: $blue;
+  font-weight: $font-weight-normal;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top : 0;
+}
+
+.js-translation-editor-word-from, .js-translation-editor-word-to {
+  //min-height: 60px;
+  word-break: break-word;
+}
+
+// side panel specific styling
+#aside-right .js-translation-editor-word-from {
+  min-height: 120px;
+}
+
+#aside-right .js-translation-editor-word-to {
+  min-height: 200px;
+}
+
+#aside-right .js-translation-editor-word-from, #aside-right .js-translation-editor-word-to {
+  word-break: break-word;
+  overflow-y: auto !important;
+}
+
+#aside-right textarea.js-translation-editor-word-from, #aside-right  textarea.js-translation-editor-word-to {
+  border: 1px solid $gray-400 !important;
+  padding: $input-btn-padding-y;
+  resize: none;
+}
+
+#aside-right textarea.js-translation-editor-word-to:focus {
+  border-color: $primary !important;
+}
+// end side panel styling
+
+.editor-mode-switch.active > i {
+  color: $blue-bright;
+}
+
+.editor-button {
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  margin: 5px 10px 5px 0;
+  padding-bottom: 2px;
+  border-radius: 30px;
+  color: gray;
+}
+
+.view-mode,.view-mode:focus {
+  color: #707070;
+  padding: 2px 7px;
+  margin: 0 4px;
+  vertical-align: bottom;
+}
+
+.view-mode.active {
+  color: #3741cc;
+}
+.view-mode:active, .view-mode i:active, .view-mode:not(.active) i:hover {
+  color: #3741cc;
+}

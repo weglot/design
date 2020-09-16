@@ -1,0 +1,14 @@
+.pagination {
+  font-weight: 500;
+
+  .page-item {
+    &.active .page-link {
+      box-shadow: 0 2px 4px 0 rgba(1,1,2,0.08);
+    }
+  }
+  .page-link {
+    border-radius: 30px;
+    min-width: 30.5px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,58 @@
+.btn-link {
+  font-weight: 500;
+}
+
+.btn-icon {
+  padding: 0.825rem;
+  line-height: 0 !important;
+  border-radius: 50% !important;
+
+  &.btn-lg {
+    @include button-size(1.344rem, 1.344rem, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  }
+
+  &.btn-sm {
+    @include button-size($btn-padding-y-sm, $btn-padding-y-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  }
+
+  &.btn-xs {
+    @include button-size($btn-padding-y-xs, $btn-padding-y-xs, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  }
+
+  & .material-icons {
+    font-size: 16px;
+  }
+}
+
+.btn {
+  white-space: nowrap;
+
+  &:focus,
+  &.focus {
+    box-shadow: none !important;
+  }
+
+  //&:not(.btn-icon) {
+  //  .material-icons {
+  //    vertical-align: bottom;
+  //    margin-left: 4px;
+  //    margin-right: 4px;
+  //  }
+  //}
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    &:not(.disabled) {
+      box-shadow: $btn-box-shadow;
+    }
+  }
+}
+
+.btn-light, .btn-secondary {
+  border: 1px solid #E0E5E9;
+}
+
+.btn-squared {
+  border-radius: 5px;
+}

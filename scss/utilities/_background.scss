@@ -1,0 +1,40 @@
+.bg-gradient-weglot {
+  background: linear-gradient(0deg, #E9EBFF 0%, #FCFCFF 100%);
+}
+
+.bg-gradient-banner {
+  background: linear-gradient(90deg, #3D46FB 0%, #1BE5BF 100%);
+}
+
+.bg-gradient-dark-light {
+  background: linear-gradient(90deg, $dark 0%, $light 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 25px 5px rgb(255, 255, 255);
+}
+
+.bg-gradient-dark-blue {
+  background-image: linear-gradient(to right, rgb(17, 16, 59), rgb(45, 28, 107));
+  position: relative;
+  overflow: hidden;
+
+  &::after, &::before {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    content: '';
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  &::before {
+    right: -200px;
+    bottom: -170px;
+  }
+
+  &::after {
+    left: -205px;
+    top: -138px;
+  }
+}

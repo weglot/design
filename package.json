@@ -1,0 +1,20 @@
+{
+  "name": "core-css",
+  "version": "1.0.0",
+  "description": "Core-css provides a set of classes allowing you to easily reproduce the Weglot dashboard design",
+  "scripts": {
+    "build": "node-sass scss/main.scss dist/css/main.css --source-map true && node-sass scss/main.scss dist/css/main.min.css --output-style compressed --source-map true"
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "codemirror": "^5.51.0",
+    "dropzone": "^5.5.1",
+    "jquery-flexdatalist": "^2.2.4",
+    "select2": "^4.0.2",
+    "star-rating-svg2": "^1.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "main": "scss/main.scss"
+}

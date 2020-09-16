@@ -1,0 +1,32 @@
+.swal-title {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  @include font-size($h1-font-size);
+}
+
+.swal-text {
+  text-align: center;
+  font-weight: $font-weight-base;
+  color: $body-color;
+  @include font-size($font-size-base);
+}
+
+.swal-footer {
+  text-align: center;
+}
+
+.swal-button:hover {
+  &.btn-danger {
+    @include button-variant($danger, $danger);
+  }
+
+}
+
+@each $color, $value in $theme-colors {
+  .swal-button.btn-#{$color}:hover {
+    @include button-variant($value, $value);
+  }
+}

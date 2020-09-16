@@ -1,0 +1,131 @@
+.wg-flag {
+  width: 24px;
+  height: 24px;
+  display: inline-block !important;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+.wg-flag-merge {
+  position: relative;
+}
+
+.wg-flag-merge .wg-flag {
+  position: absolute;
+  left: 0;
+}
+
+.wg-flag-merge .wg-flag:last-child {
+  -webkit-clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+
+.wg-flag-hw { background-image: url("../../images/flags/us.svg"); }
+.wg-flag-af { background-image: url("../../images/flags/af.svg"); }
+.wg-flag-ar { background-image: url("../../images/flags/ar.svg"); }
+.wg-flag-az { background-image: url("../../images/flags/az.svg"); }
+.wg-flag-ba { background-image: url("../../images/flags/ru.svg"); }
+.wg-flag-ru { background-image: url("../../images/flags/ru.svg"); }
+.wg-flag-be { background-image: url("../../images/flags/be.svg"); }
+.wg-flag-bg { background-image: url("../../images/flags/bg.svg"); }
+.wg-flag-br { background-image: url("../../images/flags/br.svg"); }
+.wg-flag-bs { background-image: url("../../images/flags/bs.svg"); }
+.wg-flag-co { background-image: url("../../images/flags/co.svg"); }
+.wg-flag-cs { background-image: url("../../images/flags/cs.svg"); }
+.wg-flag-de { background-image: url("../../images/flags/de.svg"); }
+.wg-flag-cy { background-image: url("../../images/flags/cy.svg"); }
+.wg-flag-da { background-image: url("../../images/flags/da.svg"); }
+.wg-flag-en { background-image: url("../../images/flags/en.svg"); }
+.wg-flag-el { background-image: url("../../images/flags/el.svg"); }
+.wg-flag-es { background-image: url("../../images/flags/es.svg"); }
+.wg-flag-et { background-image: url("../../images/flags/et.svg"); }
+.wg-flag-eu { background-image: url("../../images/flags/eu.svg"); }
+.wg-flag-fi { background-image: url("../../images/flags/fi.svg"); }
+.wg-flag-fj { background-image: url("../../images/flags/fi.svg"); }
+.wg-flag-fl { background-image: url("../../images/flags/fl.svg"); }
+.wg-flag-fr { background-image: url("../../images/flags/fr.svg"); }
+.wg-flag-nl { background-image: url("../../images/flags/nl.svg"); }
+.wg-flag-fy { background-image: url("../../images/flags/nl.svg"); }
+.wg-flag-ga { background-image: url("../../images/flags/ga.svg"); }
+.wg-flag-gd { background-image: url("../../images/flags/gd.svg"); }
+.wg-flag-gl { background-image: url("../../images/flags/es.svg"); }
+.wg-flag-hi { background-image: url("../../images/flags/hi.svg"); }
+.wg-flag-gu { background-image: url("../../images/flags/hi.svg"); }
+.wg-flag-ha { background-image: url("../../images/flags/ha.svg"); }
+.wg-flag-he { background-image: url("../../images/flags/he.svg"); }
+.wg-flag-hr { background-image: url("../../images/flags/hr.svg"); }
+.wg-flag-ht { background-image: url("../../images/flags/ht.svg"); }
+.wg-flag-hu { background-image: url("../../images/flags/hu.svg"); }
+.wg-flag-hy { background-image: url("../../images/flags/hy.svg"); }
+.wg-flag-id { background-image: url("../../images/flags/id.svg"); }
+.wg-flag-ig { background-image: url("../../images/flags/ig.svg"); }
+.wg-flag-is { background-image: url("../../images/flags/is.svg"); }
+.wg-flag-it { background-image: url("../../images/flags/it.svg"); }
+.wg-flag-ja { background-image: url("../../images/flags/ja.svg"); }
+.wg-flag-ms { background-image: url("../../images/flags/ms.svg"); }
+.wg-flag-jv { background-image: url("../../images/flags/ms.svg"); }
+.wg-flag-ka { background-image: url("../../images/flags/ka.svg"); }
+.wg-flag-kk { background-image: url("../../images/flags/kk.svg"); }
+.wg-flag-km { background-image: url("../../images/flags/km.svg"); }
+.wg-flag-kn { background-image: url("../../images/flags/hi.svg"); }
+.wg-flag-ko { background-image: url("../../images/flags/ko.svg"); }
+.wg-flag-tr { background-image: url("../../images/flags/tr.svg"); }
+.wg-flag-ku { background-image: url("../../images/flags/tr.svg"); }
+.wg-flag-ky { background-image: url("../../images/flags/ky.svg"); }
+.wg-flag-la { background-image: url("../../images/flags/it.svg"); }
+.wg-flag-lb { background-image: url("../../images/flags/lb.svg"); }
+.wg-flag-lo { background-image: url("../../images/flags/lo.svg"); }
+.wg-flag-lt { background-image: url("../../images/flags/lt.svg"); }
+.wg-flag-lv { background-image: url("../../images/flags/lv.svg"); }
+.wg-flag-mg { background-image: url("../../images/flags/mg.svg"); }
+.wg-flag-mi { background-image: url("../../images/flags/mi.svg"); }
+.wg-flag-mk { background-image: url("../../images/flags/mk.svg"); }
+.wg-flag-ml { background-image: url("../../images/flags/hi.svg"); }
+.wg-flag-mn { background-image: url("../../images/flags/mn.svg"); }
+.wg-flag-mr { background-image: url("../../images/flags/hi.svg"); }
+.wg-flag-mt { background-image: url("../../images/flags/mt.svg"); }
+.wg-flag-ne { background-image: url("../../images/flags/ne.svg"); }
+.wg-flag-no { background-image: url("../../images/flags/no.svg"); }
+.wg-flag-pa { background-image: url("../../images/flags/hi.svg"); }
+.wg-flag-pl { background-image: url("../../images/flags/pl.svg"); }
+.wg-flag-ps { background-image: url("../../images/flags/ps.svg"); }
+.wg-flag-pt { background-image: url("../../images/flags/pt.svg"); }
+.wg-flag-ro { background-image: url("../../images/flags/ro.svg"); }
+.wg-flag-sd { background-image: url("../../images/flags/hi.svg"); }
+.wg-flag-sk { background-image: url("../../images/flags/sk.svg"); }
+.wg-flag-sl { background-image: url("../../images/flags/sl.svg"); }
+.wg-flag-sm { background-image: url("../../images/flags/sm.svg"); }
+.wg-flag-sn { background-image: url("../../images/flags/sn.svg"); }
+.wg-flag-so { background-image: url("../../images/flags/so.svg"); }
+.wg-flag-sq { background-image: url("../../images/flags/sq.svg"); }
+.wg-flag-sr { background-image: url("../../images/flags/sr.svg"); }
+.wg-flag-st { background-image: url("../../images/flags/sr.svg"); }
+.wg-flag-su { background-image: url("../../images/flags/su.svg"); }
+.wg-flag-sv { background-image: url("../../images/flags/sv.svg"); }
+.wg-flag-sw { background-image: url("../../images/flags/sw.svg"); }
+.wg-flag-ta { background-image: url("../../images/flags/hi.svg"); }
+.wg-flag-te { background-image: url("../../images/flags/hi.svg"); }
+.wg-flag-tg { background-image: url("../../images/flags/tg.svg"); }
+.wg-flag-th { background-image: url("../../images/flags/th.svg"); }
+.wg-flag-tl { background-image: url("../../images/flags/fl.svg"); }
+.wg-flag-to { background-image: url("../../images/flags/to.svg"); }
+.wg-flag-tt { background-image: url("../../images/flags/ru.svg"); }
+.wg-flag-tw { background-image: url("../../images/flags/tw.svg"); }
+.wg-flag-uk { background-image: url("../../images/flags/uk.svg"); }
+.wg-flag-ur { background-image: url("../../images/flags/ur.svg"); }
+.wg-flag-uz { background-image: url("../../images/flags/uz.svg"); }
+.wg-flag-vi { background-image: url("../../images/flags/vi.svg"); }
+.wg-flag-xh { background-image: url("../../images/flags/af.svg"); }
+.wg-flag-yi { background-image: url("../../images/flags/he.svg"); }
+.wg-flag-yo { background-image: url("../../images/flags/ig.svg"); }
+.wg-flag-zh { background-image: url("../../images/flags/zh.svg"); }
+.wg-flag-zu { background-image: url("../../images/flags/af.svg"); }
+.wg-flag-am { background-image: url("../../images/flags/am.svg"); }
+.wg-flag-ny { background-image: url("../../images/flags/ny.svg"); }
+.wg-flag-fa { background-image: url("../../images/flags/fa.svg"); }
+.wg-flag-si { background-image: url("../../images/flags/si.svg"); }
+.wg-flag-bn { background-image: url("../../images/flags/bn.svg"); }
+.wg-flag-my { background-image: url("../../images/flags/my.svg"); }
+.wg-flag-ty { background-image: url("../../images/flags/ty.svg"); }
+.wg-flag-eo { background: url("../../images/flags/eo.svg") center center no-repeat; background-size: 100% auto; }
+.wg-flag-ca { background: url("../../images/flags/ca.svg") center center no-repeat; background-size: 100% auto; }
