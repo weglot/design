@@ -1,6 +1,6 @@
 {
   "name": "@weglot/core-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Core-css provides a set of classes allowing you to easily reproduce the Weglot dashboard design",
   "scripts": {
     "build": "node-sass scss/main.scss dist/css/main.css --source-map true && node-sass scss/main.scss dist/css/main.min.css --output-style compressed --source-map true"
