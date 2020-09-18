@@ -1,15 +1,15 @@
 {
-  "name": "@weglot/core-css",
-  "version": "1.0.1",
-  "description": "Core-css provides a set of classes allowing you to easily reproduce the Weglot dashboard design",
+  "name": "@weglot/design",
+  "version": "1.0.2",
+  "description": "Weglot Design provides a set of classes allowing you to easily reproduce the Weglot dashboard design",
   "scripts": {
-    "build": "node-sass scss/main.scss dist/css/main.css --source-map true && node-sass scss/main.scss dist/css/main.min.css --output-style compressed --source-map true"
+    "build": "node-sass -r scss/ -o dist/css/ --output-style compressed --source-map true"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
-    "url": "git@github.com:weglot/core-css.git"
+    "url": "git@github.com:weglot/design.git"
   },
   "dependencies": {
     "bootstrap": "4.3.1",

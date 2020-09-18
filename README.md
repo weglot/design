@@ -1,6 +1,6 @@
-# Core-css
+# Weglot Design
 
-Core-css provides a set of classes allowing you to easily reproduce the Weglot dashboard design.
+Weglot Design provides a set of classes allowing you to easily reproduce the Weglot dashboard design.
 
 
 ## Installation
@@ -21,7 +21,7 @@ Don't forget to replace `YOUR_PERSONAL_TOKEN` by your token.
 Finally, install the package :
 
 ```bash
-npm install @weglot/core-css
+npm install @weglot/design
 ```
 
 ## Development
