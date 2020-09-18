@@ -51,9 +51,9 @@
     background-color: white;
   }
 
-    .custom-control-label::after {
-      background: no-repeat 50% / 70% 70%;
-    }
+  .custom-control-label::after {
+    background: no-repeat 50% / 70% 70%;
+  }
 }
 
 .input-group {
@@ -62,11 +62,6 @@
     right: 0;
     font-weight: $btn-font-weight;
     padding: $input-btn-padding-y;
-    color: $input-placeholder-color;
-
-    &:hover {
-      color: darken($input-placeholder-color, $emphasized-link-hover-darken-percentage)
-    }
   }
   .input-group-append {
     z-index: 4;
@@ -102,7 +97,7 @@
     bottom: 0;
     left: 0;
     background-color: $primary;
-opacity: 0;
+    opacity: 0;
     transition: opacity 300ms;
   }
 }
