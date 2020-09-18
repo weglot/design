@@ -43,6 +43,31 @@
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/print";
 
+.actions {
+  margin-left: auto;
+  text-align: right;
+
+  .btn, .select2-container {
+    margin-left: 0.75rem;
+  }
+
+  .actions-item {
+    margin-left: 1rem;
+  }
+}
+
+.actions-item {
+  font-size: 20px;
+  color: $body-color;
+  line-height: 1rem;
+  display: inline-block;
+
+  &:hover,
+  &.hover {
+    color: darken($body-color, $emphasized-link-hover-darken-percentage)
+  }
+}
+
 .list-group-item-action {
   cursor: pointer;
 
@@ -65,4 +90,19 @@
 
 .list-group-item:hover {
   z-index: inherit !important; // fix z-index issue when dropdown is over list-group items
+}
+
+dd, dt {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+dt {
+  font-weight: $font-weight-normal;
+}
+
+dd {
+  font-weight: 400;
 }
