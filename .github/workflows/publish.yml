@@ -15,7 +15,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: "@weglot"
       - run: npm install
-      - run: npm version from-git --tags
+      - run: npm version from-git
       - run: npm run build
       - run: npm publish
         env:
