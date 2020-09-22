@@ -1,7 +1,8 @@
 name: Package publish
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - '*'
 
 jobs:
   publish:
@@ -13,8 +14,8 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: "@weglot"
-      - run: npm version from-git
       - run: npm install
+      - run: npm version from-git
       - run: npm run build
       - run: npm publish
         env:
