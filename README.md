@@ -33,20 +33,3 @@ Once your modifications are done, build with this command :
 ```bash
 npm run build
 ```
- 
-### Publish
-To be able to publish Weglot private packages, you need to [generate a Personal Access Token ](https://github.com/settings/tokens/new) with the `repo`, `read:packages` and `write:packages` scopes.
-
-Next, login to npm :
-
-```bash
-npm login --registry=https://npm.pkg.github.com --scope=@weglot
-```
-
-Executing this query will ask for username and password. Username is your github username. Password is the Personal Access Token that you have previously generated.
-
-Finally, run :
-
-```bash
-npm publish
-```
