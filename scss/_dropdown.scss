@@ -53,10 +53,15 @@ a.dropdown-toggle {
 
 .dropdown-btn {
   text-align: center;
-  @include button-variant($primary, $primary);
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
   margin-bottom: -$dropdown-padding-y;
   border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
+}
+
+@each $color, $value in $theme-colors {
+  .dropdown-btn-#{$color} {
+    @include button-variant($value, $value);
+  }
 }
 
 .dropdown-menu {
