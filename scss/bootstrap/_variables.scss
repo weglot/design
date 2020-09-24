@@ -775,7 +775,7 @@ $dropdown-box-shadow:               0 15px 30px 0 rgba(1,1,2,0.1);
 
 $dropdown-link-color:               $body-color;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg:            rgba(61,70,251,0.1);
+$dropdown-link-hover-bg:            $secondary;
 
 $dropdown-link-active-color:        $component-active-color !default;
 $dropdown-link-active-bg:           $component-active-bg !default;
