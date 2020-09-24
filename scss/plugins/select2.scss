@@ -49,7 +49,7 @@
   .select2-selection__rendered {
     // multiple selected elements
     li.select2-selection__choice {
-      background-color: #E0E5E9; // default color, will probably be overwritten in js for specific cases.
+      background-color: $secondary; // default color, will probably be overwritten in js for specific cases.
       border-radius: 17px;
       color: inherit;
       border: none

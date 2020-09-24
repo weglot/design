@@ -5,7 +5,7 @@
 @each $color, $value in $theme-colors {
   .bordered-#{$color} {
     border-radius: $btn-border-radius;
-    border: 1px solid $color;
+    border: 1px solid $value;
   }
 }
 
