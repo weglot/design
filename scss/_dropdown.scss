@@ -24,7 +24,7 @@
 .dropdown-item {
   font-weight: $headings-font-weight;
 
-  &.active, &:active {
+  &:not(.dropdown-btn).active, &:not(.dropdown-btn):active {
     color: inherit;
     background-color: transparent;
     position: relative;
