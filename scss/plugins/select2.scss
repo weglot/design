@@ -163,7 +163,7 @@ span.select2-selection.select2-selection--single {
 
 /** SELECT2 IN BUTTON */
 
-.select-btn-container {
+.select-btn-container, .select-multiple-btn-container {
   border:$btn-border-width solid #E0E5E9 !important;
   border-radius: $btn-border-radius !important;
   min-width: 100%;
@@ -254,15 +254,47 @@ span.select2-selection.select2-selection--single {
 }
 
 /* dropdown open */
-.select2-container--default.select2-container--open.select2-container--below .select-btn-container.select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select-btn-container.select2-selection--multiple {
+.select2-container--default.select2-container--open.select2-container--below .select-btn-container.select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below .select-btn-container.select2-selection--multiple,
+.select2-container--default.select2-container--open.select2-container--below .select-multiple-btn-container.select2-selection--multiple
+{
   border-radius: $btn-border-radius !important;
   border-color: $custom-control-indicator-border-color !important;
 }
 
 /* focus */
-.select2-container--default.select2-container--focus .select-btn-container.select2-selection--multiple, .select2-container--default.select2-container--focus .select-btn-container.select2-selection--single {
+.select2-container--default.select2-container--focus .select-btn-container.select2-selection--multiple,
+.select2-container--default.select2-container--focus .select-btn-container.select2-selection--single,
+.select2-container--default.select2-container--focus .select-multiple-btn-container.select2-selection--multiple,
+{
   border-radius: $btn-border-radius !important;
   border-color: $custom-control-indicator-border-color !important;
+}
+
+/* Select2 in button without token display */
+.select-multiple-btn-container {
+  display: flex !important;
+  cursor: pointer !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  .select2-selection__rendered {
+    display: none !important;
+  }
+  .select2-selection__arrow {
+    position: absolute;
+    right: 18px;
+  }
+}
+
+.select-multiple-btn-dropdown {
+  .select2-results__option {
+    background-color: transparent;
+  }
+}
+
+#select2-statistic-language-pair-container .select-multiple-btn-container::before {
+  content: 'Languages';
 }
 
 /** END SELECT2 BUTTON */
