@@ -13,7 +13,7 @@
 .material-icons {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'material-icons' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -225,6 +225,9 @@
 }
 .ic-calendar:before {
   content: "\ec88";
+}
+.ic-drag_indicator:before {
+  content: "\ec97";
 }
 .ic-menu_open:before {
   content: "\ecec";
