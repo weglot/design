@@ -340,3 +340,11 @@ span.select2-selection.select2-selection--single {
 .select2-search__field::placeholder {
   color: #999 !important;
 }
+
+// Error styling
+.select2.select2-container--default.is-invalid {
+  .select2-selection--multiple,
+  .select2-selection--single {
+    border-color: $red !important;
+  }
+}
