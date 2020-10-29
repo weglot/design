@@ -5,6 +5,11 @@
 layout: default
 ---
 
+{% for entry in site.foundations %}
+<h3 class="sg-h2">{{ entry.name | capitalize }}</h3>
+{% include foundation.html %}
+{% endfor %}
+
 {% assign componentsByType = site.components | group_by:"type" %}
 {% for type in componentsByType %}
 <h3 class="sg-h2">{{ type.name | capitalize }}</h3>

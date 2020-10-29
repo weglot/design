@@ -13,6 +13,8 @@ sass:
   style: :compressed
 
 collections:
+  foundations:
+    output: false
   components:
     output: false
 
