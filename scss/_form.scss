@@ -102,6 +102,10 @@
   }
 }
 
+.form-group-bar.is-warning {
+  background-color: #fd7e14;
+}
+
 .form-control:not(.disabled):focus ~ .form-group-bar::after {
   opacity: 1;
 }
