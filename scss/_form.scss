@@ -68,7 +68,6 @@
   }
 }
 
-
 .borderless-input {
   * {
     border: none;
@@ -103,7 +102,7 @@
 }
 
 .form-group-bar.is-warning {
-  background-color: #fd7e14;
+  background-color: $warning;
 }
 
 .form-control:not(.disabled):focus ~ .form-group-bar::after {
@@ -136,4 +135,8 @@
 input:focus {
   outline: 0;
   text-decoration: none;
+}
+
+#aside-right textarea.js-translation-editor-word-to.is-warning {
+  border-color: $warning !important;
 }
