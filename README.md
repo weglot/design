@@ -5,7 +5,7 @@ Weglot Design provides a set of classes allowing you to easily reproduce the Weg
 
 ## Installation
 
-Because this package is private, you need to [generate a Personal Access Token ](https://github.com/settings/tokens/new) with the `read:packages` scope. Keep the token, you'll need it.
+Because this package is hosted on GitHub Registry, you need to [generate a Personal Access Token ](https://github.com/settings/tokens/new) with the `write:packages ` -> `read:packages` scope. Keep the token, you'll need it.
 
 Next, create a `.npmrc` file in the root of your project folder and past the following code :
 
@@ -24,12 +24,19 @@ Finally, install the package :
 npm install @weglot/design
 ```
 
-## Development
-### Update
+## Usage
 
-All SCSS files are located in the /scss/ folder and the generated css file in /dist/css/. 
-Once your modifications are done, build with this command :
+### With cdn
+No need install to use this method, just include dist css file in yout html.
 
-```bash
-npm run build
+```html
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/weglot/design/dist/css/main.css">
+
+// With version
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/weglot/design@1.0.27/dist/css/main.css">
+```
+
+### With sass
+```scss
+@import "~@weglot/design/scss/main";
 ```
