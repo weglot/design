@@ -76,19 +76,3 @@
     }
   }
 }
-
-#project-switch {
-  .dropdown-menu {
-    min-width: 18rem;
-  }
-
-  .dropdown-item.active {
-    pointer-events: none;
-  }
-}
-
-#active-project {
-  max-width: 110px;
-  display: inline-flex;
-  overflow: hidden;
-}
