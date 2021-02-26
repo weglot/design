@@ -6,7 +6,7 @@
 
 .CodeMirror {
   height: auto;
-  min-height: 147px;
+  min-height: 147px !important;
   padding: $input-btn-padding-y-lg 0;
   border: 1px solid #E0E5E9;
   border-radius: $border-radius !important;
