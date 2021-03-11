@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'material-icons';
-  src:  url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.19/fonts/material-icons/material-icons.eot?a3l6fa');
-  src:  url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.19/fonts/material-icons/material-icons.eot?a3l6fa#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.19/fonts/material-icons/material-icons.ttf?a3l6fa') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.19/fonts/material-icons/material-icons.woff?a3l6fa') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.19/fonts/material-icons/material-icons.svg?a3l6fa#material-icons') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.34/fonts/material-icons/material-icons.eot?a3l6fa');
+  src:  url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.34/fonts/material-icons/material-icons.eot?a3l6fa#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.34/fonts/material-icons/material-icons.ttf?a3l6fa') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.34/fonts/material-icons/material-icons.woff?a3l6fa') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/weglot/design@1.0.34/fonts/material-icons/material-icons.svg?a3l6fa#material-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
