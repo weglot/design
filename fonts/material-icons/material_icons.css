@@ -190,6 +190,9 @@
 .ic-flip_to_front:before {
   content: "\ebf0";
 }
+.ic-restore:before {
+  content: "\ebf4";
+}
 .ic-info:before {
   content: "\ebf9";
 }
