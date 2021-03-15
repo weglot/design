@@ -14,8 +14,7 @@
   font-family: "Inter", serif;
 
   .CodeMirror-scroll {
-    max-height: 100% !important;
-    min-height: unset !important;
+    min-height: inherit;
   }
 }
 
