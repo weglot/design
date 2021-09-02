@@ -7,3 +7,4 @@ docs/.sass-cache
 styleguide/.jekyll-cache
 docs/.jekyll-metadata
 docs/vendor
+.npmrc

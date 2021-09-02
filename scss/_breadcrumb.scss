@@ -1,0 +1,15 @@
+.breadcrumb li a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.breadcrumb li.breadcrumb-item::before {
+  font-family: 'material-icons';
+  content: "\ea59";
+  font-weight: 600;
+}
+
+.breadcrumb li.breadcrumb-item:nth-child(1)::before {
+  text-decoration: underline;
+  content: "";
+}
