@@ -509,7 +509,7 @@ $input-height-lg:                       calc(#{$input-line-height-lg * 1em} + #{
 
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
-$form-text-margin-top:                  .25rem !default;
+$form-text-margin-top:                  0;
 
 $form-check-input-gutter:               1.25rem !default;
 $form-check-input-margin-y:             .3rem !default;
