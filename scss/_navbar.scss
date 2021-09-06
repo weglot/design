@@ -19,7 +19,7 @@
       @include media-breakpoint-up(md) {
         &.active a::after {
           border-bottom: 3px solid $blue-bright;
-          bottom: -8px;
+          bottom: -0.8rem;
           content: " ";
           left: 0;
           position: absolute;
