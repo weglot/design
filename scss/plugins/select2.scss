@@ -61,6 +61,7 @@
   // dropdown items
   .select2-results__option {
     padding-left: $dropdown-item-padding-x;
+    padding-right: $dropdown-item-padding-x;
     @include font-size($dropdown-font-size);
   }
   // hovered item
