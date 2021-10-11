@@ -1,5 +1,5 @@
 title: Weglot Design Styleguide
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   This is the Weglot Design styleguide.
 baseurl: "/design" # the subpath of your site, e.g. /blog
 url: "https://weglot.github.io"
@@ -13,8 +13,18 @@ sass:
   style: :compressed
 
 collections:
-  foundations:
-    output: false
-  components:
-    output: false
+  docs:
+    output: true
 
+
+defaults:
+  - scope:
+      path: "_docs/foundations"
+    values:
+      type: foundation
+      layout: doc
+  - scope:
+      path: "_docs/components"
+    values:
+      type: component
+      layout: doc

@@ -1,0 +1,27 @@
+<div class="sg-sidebar">
+    <ul class="nav flex-column">
+        <li class="nav-item"><a href="{{ site.baseurl }}/" class="nav-link {% if page.url == '/' %}active{% endif %}">Overview</a></li>
+    </ul>
+
+    {% assign foundations = site.docs | where: 'type', 'foundation' %}
+    <h6 class="px-3 mt-4 mb-1 text-muted text-uppercase">
+        <span>Foundations</span>
+    </h6>
+    <ul class="nav flex-column">
+        {% for entry in foundations %}
+        <li class="nav-item"><a href="{{ site.baseurl }}{{ entry.url }}" class="nav-link {% if entry.url == page.url %}active{% endif %}">{{ entry.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+
+    {% assign components = site.docs | where: 'type', 'component' %}
+    <h6 class="px-3 mt-4 mb-1 text-muted text-uppercase">
+        <span>Components</span>
+    </h6>
+    <ul class="nav flex-column">
+        {% for entry in components %}
+        <li class="nav-item"><a href="{{ site.baseurl }}{{ entry.url }}" class="nav-link {% if entry.url == page.url %}active{% endif %}">{{ entry.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+

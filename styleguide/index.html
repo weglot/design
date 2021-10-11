@@ -4,17 +4,8 @@
 
 layout: default
 ---
+Welcome to the Weglot Style Guide.
 
-{% for entry in site.foundations %}
-<h3 class="sg-h2">{{ entry.name | capitalize }}</h3>
-{% include foundation.html %}
-{% endfor %}
 
-{% assign componentsByType = site.components | group_by:"type" %}
-{% for type in componentsByType %}
-<h3 class="sg-h2">{{ type.name | capitalize }}</h3>
-{% assign items = type.items | sort:"type_order" %}
-{% for entry in items %}
-{% include component.html %}
-{% endfor %}
-{% endfor %}
+
+
