@@ -7,12 +7,16 @@
 @import "styleguide";
 
 
+html
+{
+  overflow-y: scroll;
+}
 
 body
 {
   margin:0;
   background:#f4f8fc;
-  color:#333;
+  //color:#333;
 }
 
 %clearfix, .clearfix
