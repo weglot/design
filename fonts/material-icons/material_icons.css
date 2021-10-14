@@ -27,6 +27,15 @@
 .ic-swap:before {
   content: "\e90c";
 }
+.ic-laptop:before {
+  content: "\e90e";
+}
+.ic-smartphone:before {
+  content: "\e90f";
+}
+.ic-tablet:before {
+  content: "\e910";
+}
 .ic-find_replace:before {
   content: "\e90b";
 }
