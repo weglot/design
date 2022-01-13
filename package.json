@@ -3,7 +3,7 @@
   "version": "1.0.56",
   "description": "Weglot Design provides a set of classes allowing you to easily reproduce the Weglot dashboard design",
   "scripts": {
-    "build": "node-sass -r scss/ -o dist/css/ --output-style compressed --source-map true"
+    "build": "node-sass -r scss/ -o dist/css/ --output-style compressed"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
