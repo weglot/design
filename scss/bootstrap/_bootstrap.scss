@@ -42,6 +42,18 @@
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/print";
 
+// Surcharge reboot.css Bootstrap rule that will be useless with version > 4.5
+a:not([href]):not([tabindex]) {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  cursor: pointer;
+
+  @include hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
 .actions {
   margin-left: auto;
   text-align: right;
@@ -104,16 +116,4 @@ dt {
 
 dd {
   font-weight: 400;
-}
-
-// Surcharge reboot.css Bootstrap rule that will be useless with version > 4.5
-a:not([href]):not([tabindex]) {
-  color: $link-color;
-  text-decoration: $link-decoration;
-  cursor: pointer;
-
-  @include hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-  }
 }
