@@ -24,6 +24,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.ic-home:before {
+  content: "\e912";
+}
 .ic-edit_note:before {
   content: "\e911";
 }
