@@ -105,6 +105,10 @@
   background-color: $warning;
 }
 
+.form-group-bar.is-danger {
+  background-color: $danger;
+}
+
 .form-control:not(.disabled):focus ~ .form-group-bar::after {
   opacity: 1;
 }
@@ -135,8 +139,4 @@
 input:focus {
   outline: 0;
   text-decoration: none;
-}
-
-#aside-right textarea.js-translation-editor-word-to.is-warning {
-  border-color: $warning !important;
 }
