@@ -16,7 +16,6 @@ collections:
   docs:
     output: true
 
-
 defaults:
   - scope:
       path: "_docs/foundations"
@@ -28,3 +27,8 @@ defaults:
     values:
       type: component
       layout: doc
+
+# files Jekyll should not delete when building assets, generated with copy-font.js
+keep_files:
+  - assets/css/material-icons.woff
+  - assets/css/material-icons.woff2      
