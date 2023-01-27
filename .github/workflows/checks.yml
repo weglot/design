@@ -1,0 +1,26 @@
+name: Checks
+
+on:
+    pull_request:
+        types:
+            - opened
+            - synchronize
+            - reopened
+            - ready_for_review
+
+concurrency:
+    group: ${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 17
+          registry-url: https://npm.pkg.github.com/
+          scope: "@weglot"
+      - run: npm install
+      - run: npm run build
