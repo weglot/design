@@ -39,7 +39,7 @@
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  content: "\eb54";
+  content: "check";
   color: $blue-bright;
 }
 .custom-switch + .form-text {
