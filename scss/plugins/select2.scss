@@ -22,8 +22,8 @@
   }
 
   .select2-selection__arrow::after {
-    font-family: 'material-icons';
-    content: "\ea57" !important;
+    font-family: 'Material Icons';
+    content: "expand_more" !important;
     line-height: 44.5px;
     font-size: 18px;
   }
@@ -86,10 +86,10 @@
     }
 
     &::after {
-      font-family: 'material-icons';
+      font-family: 'Material Icons';
       position: absolute;
       right: 6px;
-      content: "\eb54";
+      content: "check";
       color: $blue-bright;
       vertical-align: middle;
     }
@@ -118,8 +118,8 @@
   }
 
   .select2-selection__arrow::after {
-    font-family: 'material-icons';
-    content: "\ea5a" !important;
+    font-family: 'Material Icons';
+    content: "expand_less" !important;
   }
 }
 
@@ -160,8 +160,8 @@ span.select2-selection.select2-selection--single {
   &::before { // search icon
     position: absolute;
     line-height: 44.5px;
-    font-family: 'material-icons';
-    content: "\ec16";
+    font-family: 'Material Icons';
+    content: "search";
   }
 }
 

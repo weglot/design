@@ -114,17 +114,17 @@
   padding-right: 2.5rem;
 
   &::after {
-    font-family: 'material-icons';
+    font-family: 'Material Icons';
     position: absolute;
-    content: "\ea57";
+    content: "expand_more";
     font-size: 18px;
     top: 9px;
   }
 }
 
 .flatpickr.active button::after {
-    font-family: 'material-icons';
-    content: "\ea5a";
+    font-family: 'Material Icons';
+    content: "expand_less";
     position: absolute;
 }
 
