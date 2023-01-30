@@ -64,8 +64,11 @@
   align-items: center;
 
   i {
-    font-size: 18px;
     margin-right: 6px;
+
+    &.material-icons {
+      font-size: 18px;
+    }
   }
 }
 
