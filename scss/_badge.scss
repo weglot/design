@@ -1,6 +1,16 @@
 .badge {
   line-height: $line-height-base;
 
+  &-primary {
+    background-color: mix($primary, white, 10%);
+    color: $primary;
+  }
+
+  &-success {
+    background-color: mix($success, white, 10%);
+    color: $success;
+  }
+
   &-danger {
     background-color: mix($danger, white, 10%);
     color: $danger;
