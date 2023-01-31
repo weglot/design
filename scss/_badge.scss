@@ -1,3 +1,18 @@
 .badge {
   line-height: $line-height-base;
+
+  &-danger {
+    background-color: mix($danger, white, 10%);
+    color: $danger;
+  }
+
+  &-warning {
+    background-color: mix($warning, white, 10%);
+    color: $warning;
+  }
+
+  &-info {
+    background-color: mix($info, white, 10%);
+    color: $info;
+  }
 }
