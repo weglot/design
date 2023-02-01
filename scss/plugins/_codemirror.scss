@@ -2,9 +2,6 @@
 @import '~codemirror/theme/base16-light.css';
 @import '~codemirror/theme/darcula.css';
 
-@import "../bootstrap/bootstrap";
-
-
 .CodeMirror {
   height: auto;
   min-height: 147px !important;
@@ -49,4 +46,3 @@
   }
 }
 /** End base16-light theme */
-
