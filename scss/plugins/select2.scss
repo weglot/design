@@ -1,5 +1,7 @@
 @import "~select2/dist/css/select2.min.css";
 
+@import "../bootstrap/base";
+
 .select2-results {
   box-shadow: $dropdown-box-shadow;
   padding: $dropdown-padding-y 0;
