@@ -2,6 +2,8 @@
 @import '~codemirror/theme/base16-light.css';
 @import '~codemirror/theme/darcula.css';
 
+@import "../bootstrap/base";
+
 .CodeMirror {
   height: auto;
   min-height: 147px !important;
