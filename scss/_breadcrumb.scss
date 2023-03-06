@@ -1,15 +1,19 @@
 .breadcrumb li.breadcrumb-item a {
-  text-decoration: underline;
+  text-decoration: none !important;
   color: inherit;
+
+  &:hover {
+    font-weight: bold;
+  }
 }
 
 .breadcrumb li.breadcrumb-item::before {
   font-family: 'Material Icons';
-  content: "chevron_right";
+  content: ">";
   font-weight: 600;
 }
 
 .breadcrumb li.breadcrumb-item:nth-child(1)::before {
-  text-decoration: underline;
+  text-decoration: none !important;
   content: "";
 }
