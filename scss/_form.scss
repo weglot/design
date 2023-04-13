@@ -18,6 +18,7 @@
 }
 
 .custom-switch .custom-control-label {
+  cursor: pointer;
   &::before {
     background-color: $grayish;
     border: 1px solid $input-border-color!important;
