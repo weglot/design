@@ -18,3 +18,7 @@ div.dataTables_processing {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
+div.dataTables_processing div {
+  display: none;
+}
