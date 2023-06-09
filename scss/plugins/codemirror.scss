@@ -28,7 +28,7 @@
 }
 
 .CodeMirror-line {
-  word-break: break-all;
+  word-break: break-all !important;
 }
   /** Overwrite for base16-light theme */
 
