@@ -27,7 +27,10 @@
   font-size: 13px; // $small-font-size is 12px
 }
 
-/** Overwrite for base16-light theme */
+.CodeMirror-line {
+  word-break: break-all;
+}
+  /** Overwrite for base16-light theme */
 
 .CodeMirror .cm-s-base16-light {
   background-color: $grayish;
