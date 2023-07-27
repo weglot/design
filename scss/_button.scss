@@ -35,14 +35,6 @@ button:focus {
   &.focus {
     box-shadow: none !important;
   }
-
-  //&:not(.btn-icon) {
-  //  .material-icons {
-  //    vertical-align: bottom;
-  //    margin-left: 4px;
-  //    margin-right: 4px;
-  //  }
-  //}
 }
 
 @each $color, $value in $theme-colors {
@@ -53,9 +45,28 @@ button:focus {
   }
 }
 
-.btn-light, .btn-secondary {
-  border: 1px solid #E0E5E9;
+.btn-primary:hover {
+  background-color: $blue;
+  border-color: $blue;
 }
+.btn-secondary {
+  color: $dark;
+  &:hover {
+    background-color: #F6F7FB;
+    border-color: #F6F7FB;
+    color: $dark;
+  }
+}
+
+.btn-light {
+  color: $dark;
+  border: 1px solid $border-color;
+
+  &:hover {
+    color: $dark;
+  }
+}
+
 
 .btn-squared {
   border-radius: 5px;

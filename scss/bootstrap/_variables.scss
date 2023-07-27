@@ -39,17 +39,16 @@ $grays: map-merge(
 $indigo:  #6610f2 !default;
 $purple:  #5932D0;
 $pink:    #FFB29B;
-$orange:  #fd7e14 !default;
+$orange:  #F95B17;
 $yellow:  #FFD128;
 $teal:    #02B4BF;
-$cyan:    #17a2b8 !default;
+$cyan:    #C2E3FB;
 
 $blue: #18164C;
-$blue-bright: #3D46FB;
+$blue-bright: #473AE0;
 $red: #F72626;
 $green: #2EC687;
-$grayish: #f4f6f9;
-// TODO : #E0E5E9, #7F879E
+$grayish: #ECEDF0;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -79,7 +78,7 @@ $info:        $cyan !default;
 $warning:     $orange;
 $danger:      $red !default;
 $light:       $white !default;
-$dark:        #11103B;
+$dark:        #1C1D1F;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -167,8 +166,8 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   #F4F8FC;
-$body-color:                #6F7588;
+$body-bg:                   #F6F7FB;
+$body-color:                #434649;
 
 
 // Links
@@ -236,9 +235,9 @@ $line-height-lg:              1.5 !default;
 $line-height-sm:              1.5 !default;
 
 $border-width:                1px !default;
-$border-color:                $gray-300 !default;
+$border-color:                $grayish;
 
-$border-radius:               .625rem;
+$border-radius:               .5rem;
 $border-radius-lg:            1rem;
 $border-radius-sm:            .25rem;
 
@@ -437,7 +436,7 @@ $btn-line-height-lg:          $input-btn-line-height-lg !default;
 $btn-border-width:            $input-btn-border-width !default;
 
 $btn-font-weight:             500;
-$btn-box-shadow:              0 2px 4px 0 rgba(1,1,2,0.05);
+$btn-box-shadow:              0;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
 $btn-disabled-opacity:        .65 !default;
@@ -448,9 +447,9 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-block-spacing-y:         .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           22px;
-$btn-border-radius-lg:        25px;
-$btn-border-radius-sm:        22px;
+$btn-border-radius:           $border-radius-sm;
+$btn-border-radius-lg:        $border-radius-lg !default;
+$btn-border-radius-sm:        $border-radius-sm !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -484,7 +483,7 @@ $input-border-color:                    #E0E5E9;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
 
-$input-border-radius:                   $border-radius-sm;
+$input-border-radius:                   $border-radius !default;
 $input-border-radius-lg:                $border-radius-lg !default;
 $input-border-radius-sm:                $border-radius-sm !default;
 
@@ -833,13 +832,13 @@ $card-spacer-y:                     1.50rem;
 $card-spacer-x:                     1.50rem;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
-$card-border-color:                 #E0E5E9;
+$card-border-color:                 $border-color !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       transparent;
 $card-cap-color:                    null !default;
 $card-color:                        null !default;
 $card-bg:                           $white !default;
-$card-shadow:                       0 2px 4px 0 rgba(1,1,2,0.08);
+$card-shadow:                       null;
 
 $card-img-overlay-padding:          1.25rem !default;
 
