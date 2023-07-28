@@ -45,10 +45,13 @@ button:focus {
   }
 }
 
-.btn-primary:hover {
-  background-color: $blue;
-  border-color: $blue;
+.btn-primary, .btn-outline-primary {
+  &:hover {
+    background-color: $blue;
+    border-color: $blue;
+  }
 }
+
 .btn-secondary {
   color: $dark;
   &:hover {
@@ -58,7 +61,7 @@ button:focus {
   }
 }
 
-.btn-light {
+.btn-light, .btn-outline-light {
   color: $dark;
   border: 1px solid $border-color;
 
