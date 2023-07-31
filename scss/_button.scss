@@ -39,14 +39,14 @@ button:focus {
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    &:not(.disabled) {
+    &:not(.disabled, :disabled) {
       box-shadow: $btn-box-shadow;
     }
   }
 }
 
 .btn-primary, .btn-outline-primary {
-  &:not(.disabled):hover {
+  &:not(.disabled, :disabled):hover {
     background-color: $blue;
     border-color: $blue;
   }
@@ -54,7 +54,7 @@ button:focus {
 
 .btn-secondary {
   color: $dark;
-  &:not(.disabled):hover {
+  &:not(.disabled, :disabled):hover {
     background-color: #F6F7FB;
     border-color: #F6F7FB;
     color: $dark;
