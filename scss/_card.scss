@@ -10,6 +10,8 @@
   margin-right: -20px;
 }
 
+/* If the table is at the top level of card without a card-body, we need to adjust top left and top
+right cell border radius to match the card's border radius. */
 .card {
   .table {
     .thead-light {
