@@ -54,11 +54,12 @@ button:focus {
 
 .btn-secondary {
   color: $dark;
-  &:not(.disabled, :disabled):hover {
-    background-color: #F6F7FB;
-    border-color: #F6F7FB;
-    color: $dark;
-  }
+}
+
+.btn-secondary:hover {
+  color: #1C1D1F;
+  background-color: $gray-200;
+  border-color: $gray-200;
 }
 
 .btn-light, .btn-outline-light {
@@ -69,7 +70,6 @@ button:focus {
     color: $dark;
   }
 }
-
 
 .btn-squared {
   border-radius: 5px;
