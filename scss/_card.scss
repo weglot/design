@@ -10,30 +10,7 @@
   margin-right: -20px;
 }
 
-/* If the table is at the top level of card without a card-body, we need to adjust top left and top
-right cell border radius to match the card's border radius. */
+// Fix the overflow of a table header located at the top of a card.
 .card {
-  .table {
-    .thead-light {
-      th:first-child {
-        border-top-left-radius: 5px;
-      }
-
-      th:last-child {
-        border-top-right-radius: 5px;
-      }
-    }
-  }
-
-  .card-body + table {
-    .thead-light {
-      th:first-child {
-        border-top-left-radius: 0;
-      }
-
-      th:last-child {
-        border-top-right-radius: 0;
-      }
-    }
-  }
+  overflow: hidden;
 }
