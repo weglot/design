@@ -46,9 +46,15 @@ button:focus {
 }
 
 .btn-primary, .btn-outline-primary {
-  &:not(.disabled, :disabled):hover {
+  &:hover {
     background-color: $blue;
     border-color: $blue;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $primary;
+    border-color: $primary;
   }
 }
 
