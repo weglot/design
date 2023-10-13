@@ -1,71 +1,94 @@
 ul.timeline {
-  list-style-type: none;
   position: relative;
-}
+  list-style: none;
 
-ul.timeline > li {
-  //margin-left: 1rem;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
+  & > li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
 
-ul.timeline > li:before, ul.timeline > li:after {
-  content: ' ';
-  background: $blue-bright;
-  display: inline-block;
-  position: absolute;
-  left: 4px;
-  width: 1px;
-  margin-top: 4px;
-  margin-left: -39px;
-}
+  li:not(:last-child):after {
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    border: 1px solid $secondary;
+    height: 100%;
+    left: -3.25%;
+    top: 0;
+    bottom: -3%;
+  }
 
-/* Standard timeline has just one line with the date so 22px in the formula */
-ul.timeline > li:not(:first-child):before {
-  content: ' ';
-  height: calc(50% - 22px - 5px);
-  top: 0;
-}
+  .timeline-item {
+    position: relative;
+    padding-bottom: 1.5rem;
 
-/* Detailed view timeline has 2 lines (the date + user who changed the translation) so 38px in the formula */
-#aside-right ul.timeline > li:not(:first-child):before {
-  content: ' ';
-  height: calc(50% - 38px - 5px);
-  top: 0;
-}
+    .timeline-content {
+      position: relative;
+      top: 0.25rem;
+    }
 
-ul.timeline > li:not(:last-child):after {
-  content: ' ';
-  height: calc(50% + 22px - 5px);
-  bottom: -4px;
-}
-#aside-right ul.timeline > li:not(:last-child):after {
-  content: ' ';
-  height: calc(50% + 38px - 5px);
-  bottom: -4px;
-}
+    &.active::after {
+      border: 1px solid $primary;
+    }
+  }
+
+  &.timeline-sm {
+    .timeline-content {
+      position: relative;
+      top: -0.5rem;
+    }
+
+    li:after {
+      left: -3.75%;
+    }
+  }
+
+  &.timeline-xs {
+    .timeline-content {
+      position: relative;
+      top: -0.15rem;
+    }
+
+    .timeline-item {
+      padding-bottom: 0;
+    }
+
+    li:after {
+      left: -4.25%;
+    }
+  }
 
 
 
-ul.timeline > li > *:first-child:before {
-  content: '';
-  background: white;
-  display: inline-block;
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid $blue-bright;
-  left: 0;
-  width: 11px;
-  height: 11px;
-  margin-top: 4px;
-  margin-left: -40px;
-}
+  .timeline-icon {
+    position: absolute;
+    background-color: $primary;
+    left: -5%;
+    color: $white;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 
-ul.timeline > li > *:first-child:before {
-  top:calc(50% - 22px - 6px);
-}
+    &.timeline-icon-sm {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
 
-#aside-right ul.timeline > li > *:first-child:before {
-  top:calc(50% - 38px - 6px);
+    &.timeline-icon-xs {
+      width: 1rem;
+      height: 1rem;
+      font-size: 0.5rem;
+    }
+
+    &.disabled {
+      border: 1px solid $secondary;
+      background-color: white;
+      color: $primary;
+    }
+  }
 }
