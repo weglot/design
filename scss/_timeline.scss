@@ -5,8 +5,7 @@ $timeline-icon-size-sm: $font-size-lg;
 $timeline-icon-size-lg: $font-size-lg * 2;
 
 @mixin timelineLeft($padding, $icon-size, $line-border-size) {
-  $test: $icon-size * 16;
-  left: calc((#{$icon-size} / 2) - #{$padding});
+  left: calc((#{$icon-size} / 2) - #{$padding} - #{$line-border-size});
 }
 
 ul.timeline {
