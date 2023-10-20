@@ -114,139 +114,376 @@
 
 
 
+
+
+
+
+<article class="sg-component">
+    <header class="sg-component__header">
+        <h2 class="sg-component__title">Timeline</h2>
+    </header>
+    <div class="sg-component__body">
+        <div class="sg-component__display">
+            <ul class="timeline">
+    <li class="timeline-item">
+        <span class="timeline-icon bg-danger">
+            <i class="material-icons" data-toggle="tooltip" data-original-title="An error occurred while running this action." role="status" aria-label="An error occurred while running this action."> priority_high </i>
+        </span>
+        <div class="timeline-content">
+            <small>Project name</small>
+            <h4 role="presentation"> An error occured. </h4>
+            <p class="small"> 2023-10-10 11:17 (CEST) </p>
+        </div>
+    </li>
+    <li class="timeline-item">
+        <span class="timeline-icon bg-success">
+            <i class="material-icons" role="status" aria-label="Success">done</i>
+        </span>
+        <div class="timeline-content">
+            <small>Project name</small>
+            <h4 role="presentation"> Action done successfully. </h4>
+            <p class="small"> 2023-10-10 11:17 (CEST) </p>
+        </div>
+    </li>
+    <li class="timeline-item">
+        <span class="timeline-icon timeline-icon">
+            <i class="spinner-border spinner-border-sm" data-toggle="tooltip" data-original-title="This action is running." role="status"></i>
+        </span>
+        <div class="timeline-content">
+            <small>This could be a project name</small>
+            <h4 role="presentation"> Something is running... </h4>
+            <p class="small"> 2023-10-10 16:05 (CEST) </p>
+        </div>
+    </li>
+</ul>
+        </div>
+        <div class="sg-component__source">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon bg-danger"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-original-title=</span><span class="s">"An error occurred while running this action."</span> <span class="na">role=</span><span class="s">"status"</span> <span class="na">aria-label=</span><span class="s">"An error occurred while running this action."</span><span class="nt">&gt;</span> priority_high <span class="nt">&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;small&gt;</span>Project name<span class="nt">&lt;/small&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span> An error occured. <span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon bg-success"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span> <span class="na">aria-label=</span><span class="s">"Success"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;small&gt;</span>Project name<span class="nt">&lt;/small&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span> Action done successfully. <span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon timeline-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"spinner-border spinner-border-sm"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-original-title=</span><span class="s">"This action is running."</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;small&gt;</span>This could be a project name<span class="nt">&lt;/small&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span> Something is running... <span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 16:05 (CEST) <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="sg-component">
+    <header class="sg-component__header">
+        <h2 class="sg-component__title">Timeline Sizes</h2>
+    </header>
+    <div class="sg-component__body">
+        <div class="sg-component__display">
+            <div class="d-flex flex-row">
+    <ul class="timeline timeline-sm">
+        <li class="timeline-item">
+            <span class="timeline-icon" role="status"></span>
+            <div class="timeline-content">
+                <small>Project name</small>
+                <h4 role="presentation">This is a title. </h4>
+                <p class="small"> 2023-10-10 11:17 (CEST) </p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <span class="timeline-icon" role="status"></span>
+            <div class="timeline-content">
+                <small>Project name</small>
+                <h4 role="presentation">This is a title. </h4>
+                <p class="small"> 2023-10-10 11:17 (CEST) </p>
+            </div>
+        </li>
+    </ul>
+
+
+    <ul class="timeline">
+        <li class="timeline-item">
+            <span class="timeline-icon" role="status"></span>
+            <div class="timeline-content">
+                <small>Project name</small>
+                <h4 role="presentation">This is a title. </h4>
+                <p class="small"> 2023-10-10 11:17 (CEST) </p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <span class="timeline-icon" role="status"></span>
+            <div class="timeline-content">
+                <small>Project name</small>
+                <h4 role="presentation">This is a title. </h4>
+                <p class="small"> 2023-10-10 11:17 (CEST) </p>
+            </div>
+        </li>
+    </ul>
+
+    <ul class="timeline timeline-lg">
+        <li class="timeline-item">
+            <span class="timeline-icon disabled" role="status"></span>
+            <div class="timeline-content">
+                <small>Project name</small>
+                <h4 role="presentation">This is a title. </h4>
+                <p class="small"> 2023-10-10 11:17 (CEST) </p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <span class="timeline-icon" role="status"></span>
+            <div class="timeline-content">
+                <small>Project name</small>
+                <h4 role="presentation">This is a title. </h4>
+                <p class="small"> 2023-10-10 11:17 (CEST) </p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+        </div>
+        <div class="sg-component__source">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline timeline-sm"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;small&gt;</span>Project name<span class="nt">&lt;/small&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>This is a title. <span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;small&gt;</span>Project name<span class="nt">&lt;/small&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>This is a title. <span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;small&gt;</span>Project name<span class="nt">&lt;/small&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>This is a title. <span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;small&gt;</span>Project name<span class="nt">&lt;/small&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>This is a title. <span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline timeline-lg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon disabled"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;small&gt;</span>Project name<span class="nt">&lt;/small&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>This is a title. <span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;small&gt;</span>Project name<span class="nt">&lt;/small&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>This is a title. <span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <article class="sg-component">
     <header class="sg-component__header">
         <h2 class="sg-component__title">Timeline with progression</h2>
     </header>
     <div class="sg-component__body">
         <div class="sg-component__display">
-            <div class="row">
-    <div class="col">
-        <ul class="timeline">
-            <li class="timeline-item active">
-                <span class="timeline-icon">
-                    <i class="material-icons" role="status">done</i>
-                </span>
-                <h3 class="timeline-content" role="presentation">A successful step</h3>
-            </li>
-            <li class="timeline-item active">
-                <span class="timeline-icon">
-                    <i class="material-icons" role="status">done</i>
-                </span>
-                <h3 class="timeline-content" role="presentation">A step waiting for action</h3>
-            </li>
-            <li class="timeline-item">
-                <span class="timeline-icon disabled">
-                    <i class="material-icons" role="status">close</i>
-                </span>
-                <h3 class="timeline-content" role="presentation">A step with errors</h3>
-            </li>
-            <li class="timeline-item">
-                <span class="timeline-icon disabled" role="status"></span>
-                <h3 class="timeline-content" role="presentation">A step not active</h3>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col">
-        <ul class="timeline timeline-sm">
-            <li class="timeline-item active">
-                <span class="timeline-icon timeline-icon-sm">
-                    <i class="material-icons" role="status">done</i>
-                </span>
-                <h3 role="presentation">Lorem ipsum dolor sit amet</h3>
-            </li>
-            <li class="timeline-item active">
-                <span class="timeline-icon timeline-icon-sm">
-                    <i class="material-icons" role="status">done</i>
-                </span>
-                <h3 role="presentation">Lorem ipsum dolor sit amet</h3>
-            </li>
-            <li class="timeline-item">
-                <span class="timeline-icon timeline-icon-sm">
-                    <i class="material-icons" role="status">more_horiz</i>
-                </span>
-                <h3 role="presentation">Lorem ipsum dolor sit amet</h3>
-            </li>
-            <li class="timeline-item">
-                <span class="timeline-icon timeline-icon-sm disabled" role="status"></span>
-                <h3 role="presentation">Lorem ipsum dolor sit amet</h3>
-            </li>
-            <li class="timeline-item">
-                <span class="timeline-icon timeline-icon-sm disabled" role="status"></span>
-                <h3 role="presentation">Lorem ipsum dolor sit amet</h3>
-            </li>
-        </ul>
-    </div>
-</div>
+            <ul class="timeline">
+    <li class="timeline-item active">
+        <span class="timeline-icon">
+            <i class="material-icons" role="status">done</i>
+        </span>
+        <h3 class="timeline-content" role="presentation">A successful step</h3>
+    </li>
+    <li class="timeline-item active">
+        <span class="timeline-icon">
+            <i class="material-icons" role="status">done</i>
+        </span>
+        <h3 class="timeline-content" role="presentation">A step waiting for action</h3>
+    </li>
+    <li class="timeline-item">
+        <span class="timeline-icon disabled">
+            <i class="material-icons" role="status">close</i>
+        </span>
+        <h3 class="timeline-content" role="presentation">A step with errors</h3>
+    </li>
+    <li class="timeline-item">
+        <span class="timeline-icon disabled" role="status"></span>
+        <h3 class="timeline-content" role="presentation">A step not active</h3>
+    </li>
+</ul>
         </div>
         <div class="sg-component__source">
-            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item active"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"timeline-content"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>A successful step<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item active"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"timeline-content"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>A step waiting for action<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon disabled"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>close<span class="nt">&lt;/i&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"timeline-content"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>A step with errors<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon disabled"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"timeline-content"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>A step not active<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline timeline-sm"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item active"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon timeline-icon-sm"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;h3</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item active"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon timeline-icon-sm"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;h3</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon timeline-icon-sm"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>more_horiz<span class="nt">&lt;/i&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;h3</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon timeline-icon-sm disabled"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;h3</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon timeline-icon-sm disabled"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;h3</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/h3&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item active"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"timeline-content"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>A successful step<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item active"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"timeline-content"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>A step waiting for action<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon disabled"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>close<span class="nt">&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"timeline-content"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>A step with errors<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon disabled"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"timeline-content"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>A step not active<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
         </div>
     </div>
 </article>
+
+
 
 
 
@@ -304,12 +541,10 @@
             <div class="row">
     <div class="col">
         <ul class="timeline timeline-sm">
-            <li class="timeline-item">
-                <span class="timeline-icon bg-success timeline-icon-sm">
-                    <i class="material-icons" role="status">done</i>
-                </span>
+            <li class="timeline-item pb-3">
+                <span class="timeline-icon" role="status"></span>
                 <div class="timeline-content">
-                    <div class="alert alert-secondary">
+                    <div class="alert alert-secondary mb-0 text-dark">
                         Hallo, mein Hübscher!
                     </div>
                     <h4 role="presentation">
@@ -319,12 +554,10 @@
                     </h4>
                 </div>
             </li>
-            <li class="timeline-item">
-                <span class="timeline-icon bg-success timeline-icon-sm">
-                    <i class="material-icons" role="status">done</i>
-                </span>
+            <li class="timeline-item pb-3">
+                <span class="timeline-icon" role="status"></span>
                 <div class="timeline-content">
-                    <div class="alert alert-secondary" style="color: #18164C">
+                    <div class="alert alert-secondary mb-0 text-dark">
                         Hallo, mein Hübscher!
                     </div>
                     <h4 role="presentation">
@@ -337,12 +570,10 @@
                     </h4>
                 </div>
             </li>
-            <li class="timeline-item">
-                <span class="timeline-icon bg-danger timeline-icon-sm">
-                    <i class="material-icons" role="status">error</i>
-                </span>
+            <li class="timeline-item pb-3">
+                <span class="timeline-icon" role="status"></span>
                 <div class="timeline-content">
-                    <div class="alert alert-secondary" style="color: #18164C">
+                    <div class="alert alert-secondary mb-0 text-dark">
                         Hallo, mein Hübscher!
                     </div>
                     <h4 role="presentation">
@@ -364,12 +595,10 @@
             <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline timeline-sm"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon bg-success timeline-icon-sm"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item pb-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-secondary"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-secondary mb-0 text-dark"</span><span class="nt">&gt;</span>
                         Hallo, mein Hübscher!
                     <span class="nt">&lt;/div&gt;</span>
                     <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
@@ -379,12 +608,10 @@
                     <span class="nt">&lt;/h4&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon bg-success timeline-icon-sm"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item pb-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-secondary"</span> <span class="na">style=</span><span class="s">"color: #18164C"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-secondary mb-0 text-dark"</span><span class="nt">&gt;</span>
                         Hallo, mein Hübscher!
                     <span class="nt">&lt;/div&gt;</span>
                     <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
@@ -397,12 +624,10 @@
                     <span class="nt">&lt;/h4&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon bg-danger timeline-icon-sm"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>error<span class="nt">&lt;/i&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item pb-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-secondary"</span> <span class="na">style=</span><span class="s">"color: #18164C"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-secondary mb-0 text-dark"</span><span class="nt">&gt;</span>
                         Hallo, mein Hübscher!
                     <span class="nt">&lt;/div&gt;</span>
                     <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
@@ -428,128 +653,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="sg-component">
-    <header class="sg-component__header">
-        <h2 class="sg-component__title">Timeline</h2>
-    </header>
-    <div class="sg-component__body">
-        <div class="sg-component__display">
-            <ul class="timeline timeline-xs">
-    <li class="timeline-item">
-        <span class="timeline-icon timeline-icon-xs bg-danger">
-            <i class="material-icons" data-toggle="tooltip" data-original-title="An error occurred while running this action." role="status" aria-label="An error occurred while running this action."> priority_high </i>
-        </span>
-        <div class="timeline-content">
-            <small>This could be a project name</small>
-            <h4 role="presentation"> An error occured. </h4>
-            <p class="small"> 2023-10-10 11:17 (CEST) </p>
-        </div>
-    </li>
-    <li class="timeline-item">
-        <span class="timeline-icon timeline-icon-xs bg-success">
-            <i class="material-icons" role="status" aria-label="Success">done</i>
-        </span>
-        <div class="timeline-content">
-            <small>This could be a project name</small>
-            <h4 role="presentation"> Action done successfully. </h4>
-            <p class="small"> 2023-10-10 11:17 (CEST) </p>
-        </div>
-    </li>
-    <li class="timeline-item">
-        <span class="timeline-icon timeline-icon-xs">
-            <i class="spinner-border spinner-border-xs" data-toggle="tooltip" data-original-title="This action is running." role="status"></i>
-        </span>
-        <div class="timeline-content">
-            <small>This could be a project name</small>
-            <h4 role="presentation"> Something is running... </h4>
-            <p class="small"> 2023-10-10 16:05 (CEST) </p>
-        </div>
-    </li>
-</ul>
-        </div>
-        <div class="sg-component__source">
-            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"timeline timeline-xs"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon timeline-icon-xs bg-danger"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-original-title=</span><span class="s">"An error occurred while running this action."</span> <span class="na">role=</span><span class="s">"status"</span> <span class="na">aria-label=</span><span class="s">"An error occurred while running this action."</span><span class="nt">&gt;</span> priority_high <span class="nt">&lt;/i&gt;</span>
-        <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;small&gt;</span>This could be a project name<span class="nt">&lt;/small&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span> An error occured. <span class="nt">&lt;/h4&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon timeline-icon-xs bg-success"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"material-icons"</span> <span class="na">role=</span><span class="s">"status"</span> <span class="na">aria-label=</span><span class="s">"Success"</span><span class="nt">&gt;</span>done<span class="nt">&lt;/i&gt;</span>
-        <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;small&gt;</span>This could be a project name<span class="nt">&lt;/small&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span> Action done successfully. <span class="nt">&lt;/h4&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 11:17 (CEST) <span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"timeline-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"timeline-icon timeline-icon-xs"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"spinner-border spinner-border-xs"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-original-title=</span><span class="s">"This action is running."</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"timeline-content"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;small&gt;</span>This could be a project name<span class="nt">&lt;/small&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span> Something is running... <span class="nt">&lt;/h4&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span> 2023-10-10 16:05 (CEST) <span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
-        </div>
-    </div>
-</article>
 
 
 

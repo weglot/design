@@ -1,9 +1,20 @@
+$timeline-padding: 40px;
+$timeline-line-border-size: 1px;
+$timeline-icon-size: $font-size-lg * 1.5;
+$timeline-icon-size-sm: $font-size-lg;
+$timeline-icon-size-lg: $font-size-lg * 2;
+
+@mixin timelineLeft($padding, $icon-size, $line-border-size) {
+  $test: $icon-size * 16;
+  left: calc((#{$icon-size} / 2) - #{$padding});
+}
+
 ul.timeline {
   position: relative;
   list-style: none;
+  padding-left: $timeline-padding;
 
   & > li {
-    position: relative;
     display: inline-block;
     width: 100%;
   }
@@ -12,11 +23,31 @@ ul.timeline {
     content: ' ';
     display: inline-block;
     position: absolute;
-    border: 1px solid $secondary;
+    border: $timeline-line-border-size solid $secondary;
     height: 100%;
-    left: -3.25%;
+    @include timelineLeft($timeline-padding, $timeline-icon-size, $timeline-line-border-size);
     top: 0;
     bottom: -3%;
+  }
+
+  .timeline-icon {
+    position: absolute;
+    //border: 1px solid $secondary;
+    background-color: white;
+    left: -40px;
+    color: white;
+    border-radius: 50%;
+    height: $timeline-icon-size;
+    width: $timeline-icon-size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    &:not([class*="bg-"]) {
+      border: 1px solid $secondary;
+      color: $primary;
+    }
   }
 
   .timeline-item {
@@ -25,29 +56,38 @@ ul.timeline {
 
     .timeline-content {
       position: relative;
-      top: 0.25rem;
     }
 
-    &.active::after {
-      border: 1px solid $primary;
+    &.active {
+      .timeline-icon {
+        border: none;
+        background-color: $primary;
+        color: white;
+      }
+
+      &::after {
+        border: 1px solid $primary;
+      }
+
+    }
+  }
+
+  &.timeline-lg {
+    .timeline-icon {
+      width: $timeline-icon-size-lg;
+      height: $timeline-icon-size-lg;
+    }
+
+    li:after {
+      @include timelineLeft($timeline-padding, $timeline-icon-size-lg, $timeline-line-border-size);
     }
   }
 
   &.timeline-sm {
-    .timeline-content {
-      position: relative;
-      top: -0.5rem;
-    }
-
-    li:after {
-      left: -3.75%;
-    }
-  }
-
-  &.timeline-xs {
-    .timeline-content {
-      position: relative;
-      top: -0.15rem;
+    .timeline-icon {
+      width: $timeline-icon-size-sm;
+      height: $timeline-icon-size-sm;
+      font-size: 0.5rem;
     }
 
     .timeline-item {
@@ -55,40 +95,7 @@ ul.timeline {
     }
 
     li:after {
-      left: -4.25%;
-    }
-  }
-
-
-
-  .timeline-icon {
-    position: absolute;
-    background-color: $primary;
-    left: -5%;
-    color: $white;
-    border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-
-    &.timeline-icon-sm {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-
-    &.timeline-icon-xs {
-      width: 1rem;
-      height: 1rem;
-      font-size: 0.5rem;
-    }
-
-    &.disabled {
-      border: 1px solid $secondary;
-      background-color: white;
-      color: $primary;
+      @include timelineLeft($timeline-padding, $timeline-icon-size-sm, $timeline-line-border-size);
     }
   }
 }
