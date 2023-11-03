@@ -24,3 +24,4 @@
 @import "popover";
 @import "breadcrumb";
 @import "spinner";
+*:focus, .btn:focus, .focused, .checkbox-custom:focus::before, .flatpickr-day.inRange:focus { outline: 1px solid #3d46fb !important; }
