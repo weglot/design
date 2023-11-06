@@ -1,5 +1,5 @@
-button:focus {
-  outline: none !important;
+*:focus, .focused, .checkbox-custom:focus::before, .flatpickr-day.inRange:focus {
+  outline: 1px solid $blue-bright !important;
 }
 
 .btn-link {
