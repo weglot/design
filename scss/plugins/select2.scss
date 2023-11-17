@@ -151,6 +151,10 @@ span.select2-selection.select2-selection--single {
   border-width: 0 0 $dropdown-border-width 0 !important;
   border-color: $dropdown-border-color;
   padding-left: 23px;
+
+  &:focus-visible{
+    outline: 0;
+  }
 }
 
 .select2-search.select2-search--dropdown {
