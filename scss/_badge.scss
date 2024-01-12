@@ -25,4 +25,24 @@
     background-color: mix($info, white, 10%);
     color: $info;
   }
+
+  &-light {
+    background-color: $body-bg;
+    color: $dark;
+  }
+
+  &-cyan {
+    background-color: $cyan;
+    color: $dark;
+  }
+
+  &-magenta {
+    background-color: $magenta;
+    color: $dark;
+  }
+
+  &-salmon {
+    background-color: $salmon;
+    color: $dark;
+  }
 }
