@@ -38,7 +38,8 @@ $grays: map-merge(
 
 $indigo:  #6610f2 !default;
 $purple:  #5932D0;
-$pink:    #FFB29B;
+$pink:    #F5CDFF;
+$salmon:  #FDCBC3;
 $orange:  #F95B17;
 $yellow:  #FFD128;
 $teal:    #02B4BF;
@@ -58,6 +59,7 @@ $colors: map-merge(
                         "indigo":     $indigo,
                         "purple":     $purple,
                         "pink":       $pink,
+                        "salmon":     $salmon,
                         "red":        $red,
                         "orange":     $orange,
                         "yellow":     $yellow,
