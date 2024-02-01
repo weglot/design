@@ -5,9 +5,10 @@ module.exports = {
     ],
     "rules": {
         "font-family-no-missing-generic-family-keyword": [true, {
-            "ignoreFontFamilies": ["Material Icons"],
+            "ignoreFontFamilies": ["Inter", "Material Icons"],
         }],
         "no-descending-specificity": null, // TODO
-        "scss/no-global-function-names": null, // Need to update the webpack config
+        "scss/comment-no-empty": null, // Lot of empty comment in boostrap reboot file
+        "scss/no-global-function-names": null, // May need to update some build config
     }
 }
