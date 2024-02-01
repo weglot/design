@@ -8,6 +8,10 @@ $timeline-icon-size-lg: $font-size-lg * 2;
     left: calc((#{$icon-size} / 2) - #{$padding} - #{$line-border-size});
 }
 
+@mixin iconLeft($padding, $icon-size, $line-border-size) {
+    left: calc((#{$icon-size} / 4) - #{$padding});
+}
+
 ul.timeline {
     position: relative;
     list-style: none;
@@ -56,6 +60,35 @@ ul.timeline {
         .timeline-content {
             position: relative;
         }
+    &:has(+ .timeline-item-sm) {
+      padding-bottom: 1rem;
+      &::after {
+        border: 1px solid $primary;
+      }
+    }
+
+    &.timeline-item-sm {
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      .timeline-icon {
+        width: $timeline-icon-size-sm;
+        height: $timeline-icon-size-sm;
+        font-size: 0.5rem;
+        @include iconLeft($timeline-padding, $timeline-icon-size-sm, $timeline-line-border-size);
+      }
+
+      .timeline-item {
+        padding-bottom: 0;
+      }
+
+      li:after {
+        @include timelineLeft($timeline-padding, $timeline-icon-size-sm, $timeline-line-border-size);
+      }
+    }
+
+    .timeline-content {
+      position: relative;
+    }
 
         &.active {
             .timeline-icon {
