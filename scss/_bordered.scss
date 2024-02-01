@@ -1,24 +1,24 @@
 .bordered {
-  padding: 0.45rem 0.8rem;
+    padding: 0.45rem 0.8rem;
 }
 
 @each $color, $value in $theme-colors {
-  .bordered-#{$color} {
-    border-radius: $btn-border-radius;
-    border: 1px solid $value;
-  }
+    .bordered-#{$color} {
+        border-radius: $btn-border-radius;
+        border: 1px solid $value;
+    }
 }
 
 .bordered-light {
-  border-radius: $btn-border-radius;
-  border: 1px solid #E0E5E9;
+    border-radius: $btn-border-radius;
+    border: 1px solid #e0e5e9;
 }
 
 .bordered-card-light {
-  @include border-radius($card-border-radius);
-  border: 1px solid #E0E5E9;
+    @include border-radius($card-border-radius);
+    border: 1px solid #e0e5e9;
 }
 
 .rounded {
-  border-radius: 5px !important;
+    border-radius: 5px !important;
 }

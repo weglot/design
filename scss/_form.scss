@@ -1,138 +1,138 @@
 .form-group {
-  label:not(.custom-control-label) {
-    text-transform: uppercase;
-    font-size: $font-size-sm;
-    font-weight: $font-weight-bold;
-    width: 100%;
-    text-align: left;
-  }
+    label:not(.custom-control-label) {
+        text-transform: uppercase;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
+        width: 100%;
+        text-align: left;
+    }
 }
 
 .custom-control {
-  padding-top: 4px;
-  padding-bottom: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .custom-control-label {
-  color: $dark;
+    color: $dark;
 }
 
 .custom-switch .custom-control-label {
-  cursor: pointer;
-  &::before {
-    background-color: $grayish;
-    border: 1px solid $input-border-color!important;
-  }
-  &::after {
-    background-color: white;
-    box-shadow: 0 1px 2px 0 rgba(1,1,2,0.2);
-    font-family: 'Material Icons' !important;
-    content: "clear";
-    color: $body-color;
-    padding: 2px;
-    line-height: 1;
-    font-size: 12px;
-  }
+    cursor: pointer;
+    &::before {
+        background-color: $grayish;
+        border: 1px solid $input-border-color !important;
+    }
+    &::after {
+        background-color: white;
+        box-shadow: 0 1px 2px 0 rgba(1, 1, 2, 0.2);
+        font-family: 'Material Icons' !important;
+        content: 'clear';
+        color: $body-color;
+        padding: 2px;
+        line-height: 1;
+        font-size: 12px;
+    }
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
-  border: 1px solid $blue-bright!important;
+    border: 1px solid $blue-bright !important;
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  content: "check";
-  color: $blue-bright;
+    content: 'check';
+    color: $blue-bright;
 }
 .custom-switch + .form-text {
-  padding-left: $custom-switch-width + $custom-control-gutter;
+    padding-left: $custom-switch-width + $custom-control-gutter;
 }
 
 .custom-radio {
-  .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: white;
-  }
+    .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: white;
+    }
 
-  .custom-control-label::after {
-    background: no-repeat 50% / 70% 70%;
-  }
+    .custom-control-label::after {
+        background: no-repeat 50% / 70% 70%;
+    }
 }
 
 .input-group {
-  .btn-link {
-    position: absolute;
-    right: 0;
-    font-weight: $btn-font-weight;
-    padding: $input-btn-padding-y;
-  }
-  .input-group-append {
-    z-index: 4;
-  }
+    .btn-link {
+        position: absolute;
+        right: 0;
+        font-weight: $btn-font-weight;
+        padding: $input-btn-padding-y;
+    }
+    .input-group-append {
+        z-index: 4;
+    }
 }
 
 .borderless-input {
-  * {
-    border: none;
-    border-radius: 0;
-    padding-left: 0;
-    padding-right: 0;
+    * {
+        border: none;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
 
-    &:focus {
-      background-color: transparent;
+        &:focus {
+            background-color: transparent;
+        }
     }
-  }
 }
 
 .form-group-bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #E0E5E9;
-  height: 1px;
-  &::after {
-    content: '';
     position: absolute;
-    height: 1px;
-    width: 100%;
-    bottom: 0;
     left: 0;
-    background-color: $primary;
-    opacity: 0;
-    transition: opacity 300ms;
-  }
+    bottom: 0;
+    width: 100%;
+    background-color: #e0e5e9;
+    height: 1px;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        opacity: 0;
+        transition: opacity 300ms;
+    }
 }
 
 .form-group-bar.is-warning {
-  background-color: $warning;
+    background-color: $warning;
 }
 
 .form-group-bar.is-danger {
-  background-color: $danger;
+    background-color: $danger;
 }
 
 .form-control:not(.disabled):focus ~ .form-group-bar::after {
-  opacity: 1;
+    opacity: 1;
 }
 
 .has-search {
-  position: relative;
+    position: relative;
 }
 
 .has-search .form-control {
-  padding-left: 2.375rem;
+    padding-left: 2.375rem;
 }
 
 .has-search .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  width: 2.375rem;
-  padding: $input-btn-padding-y;
-  text-align: center;
-  font-size: 24px;
-  left: 0;
+    position: absolute;
+    z-index: 2;
+    width: 2.375rem;
+    padding: $input-btn-padding-y;
+    text-align: center;
+    font-size: 24px;
+    left: 0;
 }
 
 .custom-select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }

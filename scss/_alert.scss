@@ -1,24 +1,24 @@
 @each $color, $value in $theme-colors {
-  .alert-#{$color} {
-    color: color-yiq($value);
-  }
+    .alert-#{$color} {
+        color: color-yiq($value);
+    }
 }
 
 .alert-secondary {
-  border: 1px solid #E0E5E9;
+    border: 1px solid #e0e5e9;
 }
 
 .alert-dismissible .close {
-  background-color: rgba(24,22,76,0.15);
-  height: 100%;
-  border-top-right-radius: $alert-border-radius;
-  border-bottom-right-radius: $alert-border-radius;
+    background-color: rgba(24, 22, 76, 0.15);
+    height: 100%;
+    border-top-right-radius: $alert-border-radius;
+    border-bottom-right-radius: $alert-border-radius;
 }
 
 .close {
-  opacity: 1;
+    opacity: 1;
 
-  &:focus {
-    color: unset;
-  }
+    &:focus {
+        color: unset;
+    }
 }

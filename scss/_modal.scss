@@ -1,23 +1,23 @@
 .modal-content {
-  box-shadow: $dropdown-box-shadow;
-  text-align: center;
-  padding: 2.75rem 6.3rem;
+    box-shadow: $dropdown-box-shadow;
+    text-align: center;
+    padding: 2.75rem 6.3rem;
 }
 
 .modal-header {
-  justify-content: center;
+    justify-content: center;
 
-  button {
-    position: absolute;
-    right: 1.25rem;
-    top: 1.25rem;
-  }
+    button {
+        position: absolute;
+        right: 1.25rem;
+        top: 1.25rem;
+    }
 }
 
 .modal-title {
-  margin-bottom: 36px;
+    margin-bottom: 36px;
 }
 
 .modal-footer {
-  justify-content: center;
+    justify-content: center;
 }
