@@ -1,11 +1,11 @@
-.popover {
+.popover, .jvm-tooltip {
   border-radius: 10px;
   border: 1px solid #E4E4E4;
   font:inherit;
   box-shadow: 0 15px 30px 0 rgba(1,1,2,.1);
 
   &.bs-popover-top > .arrow::before,
-    &.bs-popover-auto[x-placement^="top"] > .arrow::before {
+  &.bs-popover-auto[x-placement^="top"] > .arrow::before {
     border-top-color: #E4E4E4;
   }
 }
@@ -18,4 +18,17 @@
 
 .popover-body p {
   font-size: 13px;
+}
+
+.jvm-tooltip {
+  background-color: #FFFFFF;
+  color : #434649;
+ 
+   .popover-header {
+    padding-bottom: 0;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
 }
