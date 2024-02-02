@@ -41,7 +41,8 @@
   margin-left: auto;
   text-align: right;
 
-  .btn, .select2-container {
+  .btn,
+  .select2-container {
     margin-left: 0.75rem;
   }
 
@@ -58,7 +59,7 @@
 
   &:hover,
   &.hover {
-    color: darken($body-color, $emphasized-link-hover-darken-percentage)
+    color: darken($body-color, $emphasized-link-hover-darken-percentage);
   }
 }
 
@@ -86,7 +87,8 @@
   z-index: inherit !important; // fix z-index issue when dropdown is over list-group items
 }
 
-dd, dt {
+dd,
+dt {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
   padding-bottom: 0 !important;

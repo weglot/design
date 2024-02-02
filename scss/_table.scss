@@ -12,7 +12,7 @@
     text-transform: uppercase;
     font-size: $h4-font-size;
     padding: 0.75rem;
-    word-break : keep-all;
+    word-break: keep-all;
   }
   &.table-clickable tr {
     cursor: pointer;
@@ -27,16 +27,16 @@
   }
 }
 
-.form-group-search  {
+.form-group-search {
   position: relative;
 
   input {
-    border-radius: $border-radius-lg*2;
+    border-radius: $border-radius-lg * 2;
     padding-left: $input-padding-x * 3;
   }
 
   &::before {
-    font-family: 'Material Icons';
+    font-family: "Material Icons";
     content: "search";
     position: absolute;
     padding: $input-padding-y $input-padding-x;

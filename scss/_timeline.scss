@@ -19,12 +19,16 @@ ul.timeline {
   }
 
   li:not(:last-child):after {
-    content: ' ';
+    content: " ";
     display: inline-block;
     position: absolute;
     border: $timeline-line-border-size solid $secondary;
     height: 100%;
-    @include timelineLeft($timeline-padding, $timeline-icon-size, $timeline-line-border-size);
+    @include timelineLeft(
+      $timeline-padding,
+      $timeline-icon-size,
+      $timeline-line-border-size
+    );
     top: 0;
     bottom: -3%;
   }
@@ -67,7 +71,6 @@ ul.timeline {
       &::after {
         border: 1px solid $primary;
       }
-
     }
   }
 
@@ -78,7 +81,11 @@ ul.timeline {
     }
 
     li:after {
-      @include timelineLeft($timeline-padding, $timeline-icon-size-lg, $timeline-line-border-size);
+      @include timelineLeft(
+        $timeline-padding,
+        $timeline-icon-size-lg,
+        $timeline-line-border-size
+      );
     }
   }
 
@@ -94,7 +101,11 @@ ul.timeline {
     }
 
     li:after {
-      @include timelineLeft($timeline-padding, $timeline-icon-size-sm, $timeline-line-border-size);
+      @include timelineLeft(
+        $timeline-padding,
+        $timeline-icon-size-sm,
+        $timeline-line-border-size
+      );
     }
   }
 }

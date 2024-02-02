@@ -3,6 +3,7 @@
   "version": "2.2.5",
   "description": "Weglot Design provides a set of classes allowing you to easily reproduce the Weglot dashboard design",
   "scripts": {
+    "stylelint": "stylelint scss/ --fix",
     "build": "node-sass -r scss/ -o dist/css/ --output-style compressed && npm run copyFont",
     "copyFont": "node bin/copy-font.js "
   },
@@ -23,7 +24,8 @@
     "star-rating-svg2": "^1.2.1"
   },
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "stylelint-prettier": "^5.0.0"
   },
   "main": "scss/main.scss"
 }

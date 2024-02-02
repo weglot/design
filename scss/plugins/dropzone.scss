@@ -4,7 +4,7 @@
 
 .dropzone {
   border-radius: $border-radius;
-  border: 1px dashed #7F879E;
+  border: 1px dashed #7f879e;
   background-color: $grayish;
   max-height: 122px;
 
@@ -20,12 +20,12 @@
 
     .dz-details {
       min-width: inherit;
-      top: .7rem;
+      top: 0.7rem;
       padding-left: 0;
     }
 
-    .dz-filename{
-      margin-left: .7rem;
+    .dz-filename {
+      margin-left: 0.7rem;
 
       &:hover {
         border: none;
@@ -38,7 +38,7 @@
       top: 4.5rem;
       padding-left: 0;
       border-radius: 5px;
-      height: 7px ;
+      height: 7px;
       width: 95%;
       background-color: $grayish;
       border: 1px solid $dropdown-border-color;
@@ -47,7 +47,6 @@
         padding-left: 1em;
         background: rgba(61, 70, 251, 0.3) none;
       }
-
     }
   }
 }
@@ -63,6 +62,7 @@
   background-color: #ffffff !important;
 }
 
-.dropzone .dz-preview .dz-success-mark svg, .dropzone .dz-preview .dz-error-mark svg {
+.dropzone .dz-preview .dz-success-mark svg,
+.dropzone .dz-preview .dz-error-mark svg {
   display: none;
 }

@@ -21,12 +21,12 @@
   cursor: pointer;
   &::before {
     background-color: $grayish;
-    border: 1px solid $input-border-color!important;
+    border: 1px solid $input-border-color !important;
   }
   &::after {
     background-color: white;
-    box-shadow: 0 1px 2px 0 rgba(1,1,2,0.2);
-    font-family: 'Material Icons' !important;
+    box-shadow: 0 1px 2px 0 rgba(1, 1, 2, 0.2);
+    font-family: "Material Icons" !important;
     content: "clear";
     color: $body-color;
     padding: 2px;
@@ -36,7 +36,7 @@
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
-  border: 1px solid $blue-bright!important;
+  border: 1px solid $blue-bright !important;
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
@@ -87,10 +87,10 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #E0E5E9;
+  background-color: #e0e5e9;
   height: 1px;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 1px;
     width: 100%;

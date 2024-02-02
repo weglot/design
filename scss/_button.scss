@@ -8,15 +8,33 @@
   border-radius: 50% !important;
 
   &.btn-lg {
-    @include button-size(1.344rem, 1.344rem, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+    @include button-size(
+      1.344rem,
+      1.344rem,
+      $btn-font-size-lg,
+      $btn-line-height-lg,
+      $btn-border-radius-lg
+    );
   }
 
   &.btn-sm {
-    @include button-size($btn-padding-y-sm, $btn-padding-y-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+    @include button-size(
+      $btn-padding-y-sm,
+      $btn-padding-y-sm,
+      $btn-font-size-sm,
+      $btn-line-height-sm,
+      $btn-border-radius-sm
+    );
   }
 
   &.btn-xs {
-    @include button-size($btn-padding-y-xs, $btn-padding-y-xs, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+    @include button-size(
+      $btn-padding-y-xs,
+      $btn-padding-y-xs,
+      $btn-font-size-sm,
+      $btn-line-height-sm,
+      $btn-border-radius-sm
+    );
   }
 
   & .material-icons {
@@ -41,7 +59,8 @@
   }
 }
 
-.btn-primary, .btn-outline-primary {
+.btn-primary,
+.btn-outline-primary {
   &:hover {
     background-color: $blue;
     border-color: $blue;
@@ -59,12 +78,13 @@
 }
 
 .btn-secondary:hover {
-  color: #1C1D1F;
-  background-color: #F6F7FB;
-  border-color: #F6F7FB;
+  color: #1c1d1f;
+  background-color: #f6f7fb;
+  border-color: #f6f7fb;
 }
 
-.btn-light, .btn-outline-light {
+.btn-light,
+.btn-outline-light {
   color: $dark;
   border: 1px solid $border-color;
 

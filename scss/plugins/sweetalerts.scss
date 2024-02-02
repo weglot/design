@@ -24,7 +24,6 @@
   &.btn-danger {
     @include button-variant($danger, $danger);
   }
-
 }
 
 @each $color, $value in $theme-colors {

@@ -1,6 +1,6 @@
-@import '~codemirror/lib/codemirror.css';
-@import '~codemirror/theme/base16-light.css';
-@import '~codemirror/theme/darcula.css';
+@import "~codemirror/lib/codemirror.css";
+@import "~codemirror/theme/base16-light.css";
+@import "~codemirror/theme/darcula.css";
 
 @import "../bootstrap/base";
 
@@ -8,7 +8,7 @@
   height: auto;
   min-height: 147px !important;
   padding: $input-btn-padding-y-lg 0;
-  border: 1px solid #E0E5E9;
+  border: 1px solid #e0e5e9;
   border-radius: $border-radius-sm !important;
   font-family: "Inter", serif;
   z-index: initial;
@@ -30,7 +30,7 @@
 .CodeMirror-line {
   word-break: break-all !important;
 }
-  /** Overwrite for base16-light theme */
+/** Overwrite for base16-light theme */
 
 .CodeMirror .cm-s-base16-light {
   background-color: $grayish;
@@ -47,7 +47,7 @@
   }
 
   span.cm-string {
-    color: #F38600 !important;
+    color: #f38600 !important;
   }
 }
 /** End base16-light theme */

@@ -1,9 +1,9 @@
 .bg-gradient-weglot {
-  background: linear-gradient(0deg, #E9EBFF 0%, #FCFCFF 100%);
+  background: linear-gradient(0deg, #e9ebff 0%, #fcfcff 100%);
 }
 
 .bg-gradient-banner {
-  background: linear-gradient(90deg, #3D46FB 0%, #1BE5BF 100%);
+  background: linear-gradient(90deg, #3d46fb 0%, #1be5bf 100%);
 }
 
 .bg-gradient-dark-light {
@@ -13,15 +13,20 @@
 }
 
 .bg-gradient-dark-blue {
-  background-image: linear-gradient(to right, rgb(17, 16, 59), rgb(45, 28, 107));
+  background-image: linear-gradient(
+    to right,
+    rgb(17, 16, 59),
+    rgb(45, 28, 107)
+  );
   position: relative;
   overflow: hidden;
 
-  &::after, &::before {
+  &::after,
+  &::before {
     z-index: 1;
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     height: 340px;
     width: 340px;
     border-radius: 50%;
@@ -101,11 +106,11 @@
 
       //@media (min-width: $modal-md) {
       //  &.l-shape-background__img--4 {
-      //    right: 35%;
+      //    right: 35%;right
       //  }
       //  &.l-shape-background__img--7 {
-      //    left: 35%;
-      //    top: -25px;
+      //    left: 35%;left
+      //    top: -25px;top
       //  }
       //}
     }

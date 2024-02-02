@@ -5,7 +5,7 @@
 
   &::after {
     border: none !important;
-    font-family: 'Material Icons';
+    font-family: "Material Icons";
     content: "expand_more" !important;
     vertical-align: sub;
     font-size: 18px;
@@ -24,14 +24,15 @@
 .dropdown-item {
   font-weight: $headings-font-weight;
 
-  &:not(.dropdown-btn).active, &:not(.dropdown-btn):active {
+  &:not(.dropdown-btn).active,
+  &:not(.dropdown-btn):active {
     color: inherit;
     background-color: transparent;
     position: relative;
 
     &::before {
       position: absolute;
-      content: ' ';
+      content: " ";
       background-color: $component-active-bg;
       height: 100%;
       width: 3px;
@@ -41,23 +42,28 @@
   }
 
   &.active {
-    font-weight: $font-weight-bold;    
+    font-weight: $font-weight-bold;
   }
 }
-
 
 a.dropdown-toggle {
   color: $body-color;
 
   &:hover,
   &.hover {
-    color: darken($body-color, $emphasized-link-hover-darken-percentage)
+    color: darken($body-color, $emphasized-link-hover-darken-percentage);
   }
 }
 
 .dropdown-btn {
   text-align: center;
-  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  @include button-size(
+    $btn-padding-y,
+    $btn-padding-x,
+    $btn-font-size,
+    $btn-line-height,
+    $btn-border-radius
+  );
   margin-bottom: -$dropdown-padding-y;
   border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
 }
@@ -87,16 +93,17 @@ a.dropdown-toggle {
   }
 
   &::before {
-    border-bottom: $dropdown-caret-size solid #E0E5E9;
+    border-bottom: $dropdown-caret-size solid #e0e5e9;
     top: -#{$dropdown-caret-size + 1};
   }
 
   &::after {
-    border-bottom: $dropdown-caret-size solid #FFFFFF;
+    border-bottom: $dropdown-caret-size solid #ffffff;
     top: -#{$dropdown-caret-size};
   }
 
-  &[x-placement="top-end"], &[x-placement="top-start"] {
+  &[x-placement="top-end"],
+  &[x-placement="top-start"] {
     margin: 0 0 0.85rem;
 
     &::before,
@@ -106,17 +113,18 @@ a.dropdown-toggle {
     }
 
     &::before {
-      border-top: $dropdown-caret-size solid #E0E5E9;
+      border-top: $dropdown-caret-size solid #e0e5e9;
       bottom: -#{$dropdown-caret-size + 1};
     }
 
     &::after {
-      border-top: $dropdown-caret-size solid #FFFFFF;
+      border-top: $dropdown-caret-size solid #ffffff;
       bottom: -#{$dropdown-caret-size - 1};
     }
   }
 
-  &.dropdown-caret-right { // Put the caret on the right size
+  &.dropdown-caret-right {
+    // Put the caret on the right size
     &::before,
     &::after {
       left: unset;
@@ -124,7 +132,8 @@ a.dropdown-toggle {
     }
   }
 
-  &.dropdown-caret-middle { //Put the caret on the middle
+  &.dropdown-caret-middle {
+    //Put the caret on the middle
     &::before,
     &::after {
       left: calc(50% - #{$dropdown-caret-size / 1});

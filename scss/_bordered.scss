@@ -11,12 +11,12 @@
 
 .bordered-light {
   border-radius: $btn-border-radius;
-  border: 1px solid #E0E5E9;
+  border: 1px solid #e0e5e9;
 }
 
 .bordered-card-light {
   @include border-radius($card-border-radius);
-  border: 1px solid #E0E5E9;
+  border: 1px solid #e0e5e9;
 }
 
 .rounded {

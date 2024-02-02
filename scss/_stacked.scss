@@ -1,7 +1,7 @@
-$stacked-height:            250px;
-$stacked-items:             5;
-$stacked-translate-spacer:  10px;
-$stacked-scale-spacer:      0.05;
+$stacked-height: 250px;
+$stacked-items: 5;
+$stacked-translate-spacer: 10px;
+$stacked-scale-spacer: 0.05;
 
 .stacked {
   height: $stacked-height;
@@ -17,9 +17,9 @@ $stacked-scale-spacer:      0.05;
     bottom: 0;
 
     @for $i from 1 through $stacked-items {
-      &:nth-child(#{$i+1}) {
-        bottom: -$stacked-translate-spacer*$i;
-        transform: scaleX(1-($i*$stacked-scale-spacer));
+      &:nth-child(#{$i + 1}) {
+        bottom: -$stacked-translate-spacer * $i;
+        transform: scaleX(1-($i * $stacked-scale-spacer));
         z-index: $stacked-items - $i;
       }
     }
