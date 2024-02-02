@@ -1,152 +1,158 @@
-@import "../bootstrap/base";
+@import '../bootstrap/base';
 
 .flatpickr-calendar {
-  width: 539px;
-  min-width: 539px;
-  max-width: 539px;
+    width: 539px;
+    min-width: 539px;
+    max-width: 539px;
 
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-  padding: 44px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: 44px;
 }
 
 .flatpickr-rContainer {
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .flatpickr-innerContainer {
-  margin-top: 28px;
+    margin-top: 28px;
 }
 
 .flatpickr-current-month {
-  color: $blue;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
+    color: $blue;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
 }
 
-
 .flatpickr-weekdays {
-  height: 19px;
-  justify-content: space-between;
-
+    height: 19px;
+    justify-content: space-between;
 }
 
 .flatpickr-weekdaycontainer {
-  height: 19px;
-  width: 210px;
-  min-width: 210px;
-  max-width: 210px;
+    height: 19px;
+    width: 210px;
+    min-width: 210px;
+    max-width: 210px;
 }
 
 .flatpickr-weekday {
-  height: 19px;
-  line-height: 19px !important;
+    height: 19px;
+    line-height: 19px !important;
 }
-
 
 .dayContainer {
-  width: 210px;
-  min-width: 210px;
-  max-width: 210px;
-  box-shadow: none !important;
+    width: 210px;
+    min-width: 210px;
+    max-width: 210px;
+    box-shadow: none !important;
 }
 
-
 .flatpickr-days {
-  margin-top: 10px;
-  width: 100% !important;
-  max-width: 100%;
-  min-width: 100%;
-  justify-content: space-between;
+    margin-top: 10px;
+    width: 100% !important;
+    max-width: 100%;
+    min-width: 100%;
+    justify-content: space-between;
 }
 
 .flatpickr-day {
-  max-width: 30px;
-  height: 30px;
-  line-height: 30px;
-  color: $gray-600;
-  margin: 0 !important;
-  border-radius: 0 !important;
+    max-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: $gray-600;
+    margin: 0 !important;
+    border-radius: 0 !important;
 
-  &.today {
-    border: none;
-  }
+    &.today {
+        border: none;
+    }
 
-  &.selected, &.endRange, &.startRange {
-    background: $blue-bright !important;
-    box-shadow: none !important;
-    border-color: transparent;
-  }
+    &.selected,
+    &.endRange,
+    &.startRange {
+        background: $blue-bright !important;
+        box-shadow: none !important;
+        border-color: transparent;
+    }
 
-  &.selected:hover, &.startRange:hover, &.endRange:hover, &.selected:focus, &.startRange:focus, &.endRange:focus {
-    border-color: transparent;
-  }
+    &.selected:hover,
+    &.startRange:hover,
+    &.endRange:hover,
+    &.selected:focus,
+    &.startRange:focus,
+    &.endRange:focus {
+        border-color: transparent;
+    }
 
-  &.inRange {
-    background-color: rgba(61, 70, 251, 0.3);
-    color: $blue-bright;
-    border-color: transparent;
-    box-shadow: none !important;
-  }
+    &.inRange {
+        background-color: rgba(61, 70, 251, 0.3);
+        color: $blue-bright;
+        border-color: transparent;
+        box-shadow: none !important;
+    }
 }
 
 .flatpickr-months {
-  position: relative;
-  .flatpickr-prev-month, .flatpickr-next-month {
-    position: absolute;
-    padding: 2px 0 0;
+    position: relative;
+    .flatpickr-prev-month,
+    .flatpickr-next-month {
+        position: absolute;
+        padding: 2px 0 0;
 
-    &.flatpickr-disabled {
-      display: block !important;
-      pointer-events: none;
-      & > a {
-        background-color: rgba(0, 0, 0, 0.1);
-        color: rgba(0, 0, 0, 0.3);
-        box-shadow: none;
-      }
+        &.flatpickr-disabled {
+            display: block !important;
+            pointer-events: none;
+            & > a {
+                background-color: rgba(0, 0, 0, 0.1);
+                color: rgba(0, 0, 0, 0.3);
+                box-shadow: none;
+            }
+        }
     }
-  }
 }
 
 .flatpickr button {
-  padding-right: 2.5rem;
+    padding-right: 2.5rem;
 
-  &::after {
-    font-family: 'Material Icons';
-    position: absolute;
-    content: "expand_more";
-    font-size: 18px;
-    top: 9px;
-  }
+    &::after {
+        font-family: 'Material Icons';
+        position: absolute;
+        content: 'expand_more';
+        font-size: 18px;
+        top: 9px;
+    }
 }
 
 .flatpickr.active button::after {
     font-family: 'Material Icons';
-    content: "expand_less";
+    content: 'expand_less';
     position: absolute;
 }
 
-.cur-month, .cur-year {
-  font-weight: $font-weight-bold !important;
+.cur-month,
+.cur-year {
+    font-weight: $font-weight-bold !important;
 }
 
 #flatpickr-cancel {
-  color: $yiq-text-dark;
-  font-weight: $font-weight-normal;
+    color: $yiq-text-dark;
+    font-weight: $font-weight-normal;
 }
 
-.btn-prev_month, .btn-next_month {
-  height: 30px !important;
-  width: 30px !important;
-  padding: 5px !important;
-  border-radius: 15%;
-  background-color: $grayish;
+.btn-prev_month,
+.btn-next_month {
+    height: 30px !important;
+    width: 30px !important;
+    padding: 5px !important;
+    border-radius: 15%;
+    background-color: $grayish;
 
-  & > i {
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    & > i {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

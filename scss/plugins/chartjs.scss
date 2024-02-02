@@ -1,30 +1,32 @@
-@import "../bootstrap/base";
+@import '../bootstrap/base';
 
 .tooltip-chart {
-  box-shadow: $dropdown-box-shadow;
+    box-shadow: $dropdown-box-shadow;
 
-  h3, p, span {
-    font-family: 'Inter';
-  }
+    h3,
+    p,
+    span {
+        font-family: 'Inter';
+    }
 }
 
 .granularity-input {
-  cursor: pointer;
-  background-color: $grayish;
-  color: inherit;
-  font-weight: $font-weight-bold;
-  margin-right: $label-margin-bottom;
-  margin-left: $label-margin-bottom;
-  font-size: $font-size-sm;
-  padding: $table-cell-padding-sm $input-btn-padding-x-sm $input-btn-padding-y-sm;
-  text-transform: uppercase;
+    cursor: pointer;
+    background-color: $grayish;
+    color: inherit;
+    font-weight: $font-weight-bold;
+    margin-right: $label-margin-bottom;
+    margin-left: $label-margin-bottom;
+    font-size: $font-size-sm;
+    padding: $table-cell-padding-sm $input-btn-padding-x-sm $input-btn-padding-y-sm;
+    text-transform: uppercase;
 }
 
 .granularity-input.active {
-  background-color: $blue-bright;
-  color: $white;
+    background-color: $blue-bright;
+    color: $white;
 }
 .granularity-input input {
-  position: fixed;
-  opacity: 0;
+    position: fixed;
+    opacity: 0;
 }

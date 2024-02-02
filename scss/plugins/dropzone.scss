@@ -1,68 +1,68 @@
-@import "~dropzone/dist/min/dropzone.min.css";
+@import '~dropzone/dist/min/dropzone.min.css';
 
-@import "../bootstrap/base";
+@import '../bootstrap/base';
 
 .dropzone {
-  border-radius: $border-radius;
-  border: 1px dashed #7F879E;
-  background-color: $grayish;
-  max-height: 122px;
+    border-radius: $border-radius;
+    border: 1px dashed #7f879e;
+    background-color: $grayish;
+    max-height: 122px;
 
-  // hide file size, error image
-  .dz-size {
-    display: none;
-  }
-
-  /** File preview style **/
-  .dz-preview {
-    display: block;
-    margin: 0;
-
-    .dz-details {
-      min-width: inherit;
-      top: .7rem;
-      padding-left: 0;
+    // hide file size, error image
+    .dz-size {
+        display: none;
     }
 
-    .dz-filename{
-      margin-left: .7rem;
+    /** File preview style **/
+    .dz-preview {
+        display: block;
+        margin: 0;
 
-      &:hover {
-        border: none;
-      }
+        .dz-details {
+            min-width: inherit;
+            top: 0.7rem;
+            padding-left: 0;
+        }
+
+        .dz-filename {
+            margin-left: 0.7rem;
+
+            &:hover {
+                border: none;
+            }
+        }
+
+        /** upload bar **/
+        .dz-progress {
+            left: 3.5rem;
+            top: 4.5rem;
+            padding-left: 0;
+            border-radius: 5px;
+            height: 7px;
+            width: 95%;
+            background-color: $grayish;
+            border: 1px solid $dropdown-border-color;
+
+            .dz-upload {
+                padding-left: 1em;
+                background: rgba(61, 70, 251, 0.3) none;
+            }
+        }
     }
-
-    /** upload bar **/
-    .dz-progress {
-      left: 3.5rem;
-      top: 4.5rem;
-      padding-left: 0;
-      border-radius: 5px;
-      height: 7px ;
-      width: 95%;
-      background-color: $grayish;
-      border: 1px solid $dropdown-border-color;
-
-      .dz-upload {
-        padding-left: 1em;
-        background: rgba(61, 70, 251, 0.3) none;
-      }
-
-    }
-  }
 }
 
 // turns bg color to white when a file is dragged in
 .dz-started {
-  background-color: $white;
-  border: 1px solid $dropdown-border-color;
+    background-color: $white;
+    border: 1px solid $dropdown-border-color;
 }
 
 .dropzone .dz-preview.dz-file-preview .dz-image {
-  background: inherit !important;
-  background-color: #ffffff !important;
+    background: inherit !important;
+    background-color: #ffffff !important;
 }
 
-.dropzone .dz-preview .dz-success-mark svg, .dropzone .dz-preview .dz-error-mark svg {
-  display: none;
+.dropzone .dz-preview .dz-success-mark svg,
+.dropzone .dz-preview .dz-error-mark svg {
+    display: none;
 }

@@ -13,14 +13,15 @@ concurrency:
     cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 17
-          registry-url: https://npm.pkg.github.com/
-          scope: "@weglot"
-      - run: npm install
-      - run: npm run build
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                  node-version-file: ".nvmrc"
+                  registry-url: https://npm.pkg.github.com/
+                  scope: "@weglot"
+            - run: npm install
+            - run: npm run stylelint:ci
+            - run: npm run build

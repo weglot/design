@@ -1,78 +1,92 @@
 .btn-link {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .btn-icon {
-  padding: 0.825rem;
-  line-height: 0 !important;
-  border-radius: 50% !important;
+    padding: 0.825rem;
+    line-height: 0 !important;
+    border-radius: 50% !important;
 
-  &.btn-lg {
-    @include button-size(1.344rem, 1.344rem, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
-  }
+    &.btn-lg {
+        @include button-size(1.344rem, 1.344rem, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+    }
 
-  &.btn-sm {
-    @include button-size($btn-padding-y-sm, $btn-padding-y-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
-  }
+    &.btn-sm {
+        @include button-size(
+            $btn-padding-y-sm,
+            $btn-padding-y-sm,
+            $btn-font-size-sm,
+            $btn-line-height-sm,
+            $btn-border-radius-sm
+        );
+    }
 
-  &.btn-xs {
-    @include button-size($btn-padding-y-xs, $btn-padding-y-xs, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
-  }
+    &.btn-xs {
+        @include button-size(
+            $btn-padding-y-xs,
+            $btn-padding-y-xs,
+            $btn-font-size-sm,
+            $btn-line-height-sm,
+            $btn-border-radius-sm
+        );
+    }
 
-  & .material-icons {
-    font-size: 16px;
-  }
+    & .material-icons {
+        font-size: 16px;
+    }
 }
 
 .btn {
-  white-space: nowrap;
+    white-space: nowrap;
 
-  &:focus,
-  &.focus {
-    box-shadow: none !important;
-  }
+    &:focus,
+    &.focus {
+        box-shadow: none !important;
+    }
 }
 
 @each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    &:not(.disabled, :disabled) {
-      box-shadow: $btn-box-shadow;
+    .btn-#{$color} {
+        &:not(.disabled, :disabled) {
+            box-shadow: $btn-box-shadow;
+        }
     }
-  }
 }
 
-.btn-primary, .btn-outline-primary {
-  &:hover {
-    background-color: $blue;
-    border-color: $blue;
-  }
+.btn-primary,
+.btn-outline-primary {
+    &:hover {
+        background-color: $blue;
+        border-color: $blue;
+    }
 
-  &.disabled,
-  &:disabled {
-    background-color: $primary;
-    border-color: $primary;
-  }
+    &.disabled,
+    &:disabled {
+        background-color: $primary;
+        border-color: $primary;
+    }
 }
 
 .btn-secondary {
-  color: $dark;
+    color: $dark;
 }
 
 .btn-secondary:hover {
-  color: #1C1D1F;
-  background-color: #F6F7FB;
-  border-color: #F6F7FB;
+    color: #1c1d1f;
+    background-color: #f6f7fb;
+    border-color: #f6f7fb;
 }
 
-.btn-light, .btn-outline-light {
-  color: $dark;
-  border: 1px solid $border-color;
-
-  &:not(.disabled):hover {
+.btn-light,
+.btn-outline-light {
     color: $dark;
-  }
+    border: 1px solid $border-color;
+
+    &:not(.disabled):hover {
+        color: $dark;
+    }
 }
 
 .btn-squared {
-  border-radius: 5px;
+    border-radius: 5px;
 }
