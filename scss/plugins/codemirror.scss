@@ -32,12 +32,20 @@
 }
 /** Overwrite for base16-light theme */
 
-.CodeMirror .cm-s-base16-light {
+.CodeMirror.cm-s-base16-light {
     background-color: $grayish;
     max-height: 100% !important;
+
+    &.CodeMirror-empty {
+        color: $gray-500;
+    }
 }
 
 .cm-s-base16-light {
+    .CodeMirror-gutters {
+        background-color: $grayish;
+    }
+
     span.cm-tag {
         color: $blue-bright !important;
     }
