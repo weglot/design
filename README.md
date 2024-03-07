@@ -2,6 +2,7 @@
 
 Weglot Design provides a set of classes allowing you to easily reproduce the Weglot dashboard design.
 
+https://weglot.github.io/design/
 
 ## Installation
 
@@ -26,8 +27,12 @@ npm install @weglot/design
 
 ## Usage
 
-### With cdn
-No need install to use this method, just include dist css file in yout html.
+### With cdn[
+No need install to use this](- To use this command you need to have ruby, bundler and jekill up to date
+    - to install Ruby : https://mac.install.guide/ruby/13.html / https://nrogap.medium.com/install-rvm-in-macos-step-by-step-d3b3c236953b
+    - to install bunder : https://bundler.io/
+    - to install jekyll : `run bundle`
+- Be carefull your ruby version must to be ≤ 3.1.2 and >2.7) method, just include dist css file in yout html.
 
 ```html
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/weglot/design/dist/css/main.css">
@@ -40,3 +45,19 @@ No need install to use this method, just include dist css file in yout html.
 ```scss
 @import "~@weglot/design/scss/main";
 ```
+
+
+## Contributing
+
+To locally run Jekkyl in order to try changes or preview Styleguide run the following:
+```
+bundle exec jekyll serve
+```
+
+### Prerequistes
+- To use this command you need to have Ruby, Bundler and Jekyll up to date
+    - to install Ruby : https://mac.install.guide/ruby/13.html / https://nrogap.medium.com/install-rvm-in-macos-step-by-step-d3b3c236953b
+    - to install Bundler : https://bundler.io/
+    - to install Jekyll : `run bundle`
+  
+> Be carefull your ruby version must to be ≤ 3.1.2 and >2.7
