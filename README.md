@@ -45,7 +45,7 @@ No need install to use this method, just include dist css file in yout html.
 
 ## Contributing
 
-To locally run Jekkyl in order to try changes or preview Styleguide run the following:
+To locally run Jekkyl in order to try changes or preview Styleguide run the following in the /styleguide directory:
 ```
 bundle exec jekyll serve
 ```
