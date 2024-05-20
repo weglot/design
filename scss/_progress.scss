@@ -1,0 +1,29 @@
+@property --percentage {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
+
+.progress-round {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+
+    .progress-round-bar::before {
+        --percentage: var(--value);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: conic-gradient($progress-bar-bg calc(var(--percentage) * 1%), $progress-bg 0);
+        mask: radial-gradient(white 55%, transparent 0);
+        mask-mode: alpha;
+        -webkit-mask: radial-gradient(#0000 55%, #000 0);
+        -webkit-mask-mode: alpha;
+    }
+}
