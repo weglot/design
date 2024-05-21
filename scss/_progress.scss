@@ -4,7 +4,7 @@
     initial-value: 0;
 }
 
-.progress-round {
+.progress-round, .progress-round-secondary {
     aspect-ratio: 1;
     border-radius: 50%;
     position: relative;
@@ -25,5 +25,11 @@
         mask-mode: alpha;
         -webkit-mask: radial-gradient(#0000 55%, #000 0);
         -webkit-mask-mode: alpha;
+    }
+
+    &-secondary {
+        .progress-round-bar::before {
+            background: conic-gradient(#fff calc(var(--percentage) * 1%), $gray-400 0);
+        }    
     }
 }
