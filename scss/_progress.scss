@@ -26,4 +26,9 @@
         -webkit-mask: radial-gradient(#0000 55%, #000 0);
         -webkit-mask-mode: alpha;
     }
+    &-secondary {
+        .progress-round-bar::before {
+            background: conic-gradient(#fff calc(var(--percentage) * 1%), $gray-400 0);
+        }
+    }
 }
