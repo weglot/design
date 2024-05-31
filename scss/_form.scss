@@ -43,6 +43,11 @@
     content: 'check';
     color: $blue-bright;
 }
+
+.custom-control-input-secondary:checked ~ .custom-control-label::before {
+    border-color: #fff;
+}
+
 .custom-switch + .form-text {
     padding-left: $custom-switch-width + $custom-control-gutter;
 }
