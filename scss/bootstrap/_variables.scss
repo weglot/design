@@ -106,6 +106,9 @@ $yiq-contrasted-threshold: 200;
 $yiq-text-dark: #6f7588;
 $yiq-text-light: $white !default;
 
+// Characters which are escaped by the escape-svg function
+$escaped-characters: (('<', '%3c'), ('>', '%3e'), ('#', '%23'), ('(', '%28'), (')', '%29')) !default;
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -257,6 +260,7 @@ $caret-spacing: $caret-width * 0.85 !default;
 $transition-base: all 0.2s ease-in-out !default;
 $transition-fade: opacity 0.15s linear !default;
 $transition-collapse: height 0.35s ease !default;
+$transition-collapse-width: width 0.35s ease !default;
 
 $embed-responsive-aspect-ratios: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -406,6 +410,7 @@ $btn-padding-x: $input-btn-padding-x !default;
 $btn-font-family: $input-btn-font-family !default;
 $btn-font-size: $input-btn-font-size !default;
 $btn-line-height: $input-btn-line-height !default;
+$btn-white-space: null !default; // Set to `nowrap` to prevent text wrapping
 
 $btn-padding-y-xs: 0.25rem;
 $btn-padding-x-xs: 0.5rem;
@@ -529,6 +534,7 @@ $custom-forms-transition:
 
 $custom-control-gutter: 0.5rem !default;
 $custom-control-spacer-x: 1rem !default;
+$custom-control-cursor: null !default;
 
 $custom-control-indicator-size: 1.25rem;
 $custom-control-indicator-bg: $input-bg !default;
@@ -537,6 +543,8 @@ $custom-control-indicator-bg-size: 50% 50% !default;
 $custom-control-indicator-box-shadow: $input-box-shadow !default;
 $custom-control-indicator-border-color: #e0e5e9;
 $custom-control-indicator-border-width: 1px;
+
+$custom-control-label-color: null !default;
 
 $custom-control-indicator-disabled-bg: $input-disabled-bg !default;
 $custom-control-label-disabled-color: $gray-600 !default;
@@ -763,6 +771,8 @@ $navbar-toggler-padding-x: 0.75rem !default;
 $navbar-toggler-font-size: $font-size-lg !default;
 $navbar-toggler-border-radius: $btn-border-radius !default;
 
+$navbar-nav-scroll-max-height: 75vh !default;
+
 $navbar-dark-color: $yiq-text-dark;
 $navbar-dark-hover-color: rgba($white, 0.95);
 $navbar-dark-active-color: $white !default;
@@ -795,6 +805,7 @@ $navbar-dark-brand-hover-color: $navbar-dark-active-color !default;
 // Dropdown menu container and contents.
 
 $dropdown-min-width: 12rem;
+$dropdown-padding-x: 0 !default;
 $dropdown-padding-y: 0.5rem !default;
 $dropdown-spacer: 0.85rem;
 $dropdown-font-size: $h4-font-size;
@@ -821,6 +832,7 @@ $dropdown-item-padding-y: 0.5rem;
 $dropdown-item-padding-x: 1.5rem !default;
 
 $dropdown-header-color: $gray-600 !default;
+$dropdown-header-padding: $dropdown-padding-y $dropdown-item-padding-x !default;
 
 $dropdown-caret-size: 10px;
 $dropdown-caret-shift-from-side: 30px;
@@ -854,6 +866,9 @@ $pagination-disabled-color: $pagination-color;
 $pagination-disabled-bg: $pagination-bg;
 $pagination-disabled-border-color: $gray-300 !default;
 
+$pagination-border-radius-sm: $border-radius-sm !default;
+$pagination-border-radius-lg: $border-radius-lg !default;
+
 // Jumbotron
 
 $jumbotron-padding: 2rem !default;
@@ -870,6 +885,7 @@ $card-border-color: $border-color !default;
 $card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg: transparent;
 $card-cap-color: null !default;
+$card-height: null !default;
 $card-color: null !default;
 $card-bg: $white !default;
 $card-shadow: null;
@@ -915,6 +931,7 @@ $popover-max-width: 350px;
 $popover-border-width: $border-width !default;
 $popover-border-color: rgba($black, 0.2) !default;
 $popover-border-radius: $border-radius-lg !default;
+$popover-inner-border-radius: subtract($popover-border-radius, $popover-border-width) !default;
 $popover-box-shadow: 0 0.25rem 0.5rem rgba($black, 0.2) !default;
 
 $popover-header-bg: darken($popover-bg, 3%) !default;
@@ -970,6 +987,9 @@ $badge-pill-border-radius: 10rem !default;
 // Padding applied to the modal body
 $modal-inner-padding: 1rem !default;
 
+// Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
+$modal-footer-margin-between: 0.5rem !default;
+
 $modal-dialog-margin: 0.5rem !default;
 $modal-dialog-margin-y-sm-up: 1.75rem !default;
 
@@ -980,6 +1000,7 @@ $modal-content-bg: $white !default;
 $modal-content-border-color: rgba($black, 0.2) !default;
 $modal-content-border-width: 0;
 $modal-content-border-radius: $border-radius;
+$modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
 $modal-content-box-shadow-xs: 0 0.25rem 0.5rem rgba($black, 0.5) !default;
 $modal-content-box-shadow-sm-up: 0 0.5rem 1rem rgba($black, 0.5) !default;
 
@@ -1001,6 +1022,7 @@ $modal-sm: 300px !default;
 $modal-fade-transform: translate(0, -50px) !default;
 $modal-show-transform: none !default;
 $modal-transition: transform 0.3s ease-out !default;
+$modal-scale-transform: scale(1.02) !default;
 
 // Alerts
 //
@@ -1070,6 +1092,8 @@ $figure-caption-color: $gray-600 !default;
 
 // Breadcrumbs
 
+$breadcrumb-font-size: null !default;
+
 $breadcrumb-padding-y: 0.75rem !default;
 $breadcrumb-padding-x: 0;
 $breadcrumb-item-padding: 0.5rem !default;
@@ -1121,6 +1145,7 @@ $carousel-transition: transform $carousel-transition-duration ease-in-out !defau
 
 $spinner-width: 2rem !default;
 $spinner-height: $spinner-width !default;
+$spinner-vertical-align: -0.125em !default;
 $spinner-border-width: 0.25em !default;
 
 $spinner-width-sm: 1rem !default;
@@ -1157,6 +1182,7 @@ $pre-scrollable-max-height: 340px !default;
 $displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
 $overflows: auto, hidden !default;
 $positions: static, relative, absolute, fixed, sticky !default;
+$user-selects: all, auto, none !default;
 
 // Printing
 
