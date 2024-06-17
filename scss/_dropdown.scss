@@ -130,7 +130,7 @@ a.dropdown-toggle {
         //Put the caret on the middle
         &::before,
         &::after {
-            left: calc(50% - #{$dropdown-caret-size / 1});
+            left: calc(50% - #{$dropdown-caret-size});
         }
     }
 }

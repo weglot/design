@@ -8,7 +8,7 @@
     %grid-column {
         position: relative;
         width: 100%;
-        padding: $gutter / 2;
+        padding: calc($gutter / 2);
     }
 
     @each $breakpoint in map-keys($breakpoints) {
