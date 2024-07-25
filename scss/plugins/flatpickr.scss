@@ -1,6 +1,13 @@
 @import '../bootstrap/base';
 
 .flatpickr-calendar {
+    &.single {
+        width: auto;
+        min-width: auto;
+        max-width: none;
+        padding: 20px;
+    }
+
     width: 539px;
     min-width: 539px;
     max-width: 539px;
