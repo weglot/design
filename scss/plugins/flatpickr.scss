@@ -1,13 +1,6 @@
 @import '../bootstrap/base';
 
 .flatpickr-calendar {
-    &.range {
-        width: 539px;
-        min-width: 539px;
-        max-width: 539px;
-        padding: 44px;
-    }
-
     width: auto;
     min-width: auto;
     max-width: none;
@@ -15,6 +8,13 @@
 
     border-radius: $border-radius;
     box-shadow: $box-shadow;
+
+    &.range {
+        width: 539px;
+        min-width: 539px;
+        max-width: 539px;
+        padding: 44px;
+    }
 }
 
 .flatpickr-rContainer {

@@ -1,9 +1,1 @@
-{
-	"version": 3,
-	"file": "star-rating-svg.css",
-	"sources": [
-		"../../../scss/plugins/star-rating-svg.scss"
-	],
-	"names": [],
-	"mappings": "AAAA,OAAO,CAAP,kDAAO,CAEP,AAAA,QAAQ,AAAC,CACP,MAAM,CAAE,KAAK,CACd"
-}
+{"version":3,"sourceRoot":"","sources":["../../../scss/plugins/star-rating-svg.scss"],"names":[],"mappings":"AAAQ,uDAER,SACI","file":"star-rating-svg.css"}
