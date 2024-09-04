@@ -51,7 +51,7 @@ a.dropdown-toggle {
 
     &:hover,
     &.hover {
-        color: darken($body-color, $emphasized-link-hover-darken-percentage);
+        color: $body-emphasis-color;
     }
 }
 
