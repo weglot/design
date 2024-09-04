@@ -247,7 +247,7 @@ span.select2-selection.select2-selection--single {
 .select2-container--default.select2-container--open.select2-container--below
     .select-multiple-btn-container.select2-selection--multiple {
     border-radius: $btn-border-radius !important;
-    border-color: $custom-control-indicator-border-color !important;
+    border-color: $form-select-border-color !important;
 }
 
 /* focus */
@@ -255,7 +255,7 @@ span.select2-selection.select2-selection--single {
 .select2-container--default.select2-container--focus .select-btn-container.select2-selection--single,
 .select2-container--default.select2-container--focus .select-multiple-btn-container.select2-selection--multiple {
     border-radius: $btn-border-radius !important;
-    border-color: $custom-control-indicator-border-color !important;
+    border-color: $form-select-border-color !important;
 }
 
 /* Select2 in button without token display */
