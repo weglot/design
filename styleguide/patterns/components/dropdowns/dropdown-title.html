@@ -1,0 +1,42 @@
+---
+title: Dropdown with title and input
+category: dropdown
+category_order: 2
+---
+
+<header class="d-flex">
+    <h1>Dashboard</h1>
+    <div class="actions d-flex align-items-center">
+        <div class="form-group has-search mb-0 ml-2">
+            <i class="material-icons form-control-feedback">pageview</i>
+            <label>
+                <input class="form-control" placeholder="Search an entity" type="text">
+            </label>
+        </div>
+        <div class="dropdown">
+            <a class="align-middle text-center btn btn-primary" data-toggle="dropdown">
+                Create
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <div class="dropdown-item">
+                    <div class="d-flex justify-content-left align-items-center">
+                        <i class="material-icons mr-1">business</i>
+                        <span class="ellipsis">Create a workspace</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <small class="text-muted">Set up projects, collaborate and manage billing.</small>
+                    </div>
+                </div>
+                <div class="dropdown-item">
+                    <div class="d-flex justify-content-left align-items-center">
+                        <i aria-hidden="true" class="material-icons mr-1">folder</i>
+                        <span class="ellipsis">Create a project</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <small class="text-muted">Work on your website translation.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
