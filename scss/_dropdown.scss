@@ -76,62 +76,8 @@ a.dropdown-toggle {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
-    &::before,
-    &::after {
-        border-left: $dropdown-caret-size solid rgba(0, 0, 0, 0);
-        border-right: $dropdown-caret-size solid rgba(0, 0, 0, 0);
-        content: '';
-        display: inline-block;
-        left: $dropdown-caret-shift-from-side;
-        position: absolute;
-    }
-
-    &::before {
-        border-bottom: $dropdown-caret-size solid #e0e5e9;
-        top: -#{$dropdown-caret-size + 1};
-    }
-
-    &::after {
-        border-bottom: $dropdown-caret-size solid #ffffff;
-        top: -#{$dropdown-caret-size};
-    }
-
-    &[x-placement='top-end'],
-    &[x-placement='top-start'] {
-        margin: 0 0 0.85rem;
-
-        &::before,
-        &::after {
-            border-bottom: unset;
-            top: unset;
-        }
-
-        &::before {
-            border-top: $dropdown-caret-size solid #e0e5e9;
-            bottom: -#{$dropdown-caret-size + 1};
-        }
-
-        &::after {
-            border-top: $dropdown-caret-size solid #ffffff;
-            bottom: -#{$dropdown-caret-size - 1};
-        }
-    }
-
-    &.dropdown-caret-right {
-        // Put the caret on the right size
-        &::before,
-        &::after {
-            left: unset;
-            right: $dropdown-caret-shift-from-side;
-        }
-    }
-
-    &.dropdown-caret-middle {
-        //Put the caret on the middle
-        &::before,
-        &::after {
-            left: calc(50% - #{$dropdown-caret-size});
-        }
+    &.dropdown-menu-lg {
+        min-width: 18rem;
     }
 }
 

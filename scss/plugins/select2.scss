@@ -2,6 +2,8 @@
 
 @import '../bootstrap/base';
 
+$select2-border-size: 10px;
+
 .select2-results {
     box-shadow: $dropdown-box-shadow;
     padding: $dropdown-padding-y 0;
@@ -215,8 +217,8 @@ span.select2-selection.select2-selection--single {
 
 .select2-dropdown {
     &::before {
-        border-left: $dropdown-caret-size solid rgba(0, 0, 0, 0);
-        border-right: $dropdown-caret-size solid rgba(0, 0, 0, 0);
+        border-left: $select2-border-size solid rgba(0, 0, 0, 0);
+        border-right: $select2-border-size solid rgba(0, 0, 0, 0);
         content: '';
         display: inline-block;
         left: 9px;
@@ -224,8 +226,8 @@ span.select2-selection.select2-selection--single {
     }
 
     &::after {
-        border-left: $dropdown-caret-size solid rgba(0, 0, 0, 0);
-        border-right: $dropdown-caret-size solid rgba(0, 0, 0, 0);
+        border-left: $select2-border-size solid rgba(0, 0, 0, 0);
+        border-right: $select2-border-size solid rgba(0, 0, 0, 0);
         content: '';
         display: inline-block;
         left: 9px;
@@ -237,25 +239,25 @@ span.select2-selection.select2-selection--single {
     margin-top: 0.6rem !important;
 
     &::before {
-        border-bottom: $dropdown-caret-size solid #e0e5e9;
-        top: -$dropdown-caret-size;
+        border-bottom: $select2-border-size solid #e0e5e9;
+        top: -$select2-border-size;
     }
 
     &::after {
-        border-bottom: $dropdown-caret-size solid #ffffff;
-        top: -#{$dropdown-caret-size - 1};
+        border-bottom: $select2-border-size solid #ffffff;
+        top: -#{$select2-border-size - 1};
     }
 }
 
 .select2-dropdown--above {
     &::before {
-        border-top: $dropdown-caret-size solid #e0e5e9;
-        bottom: -$dropdown-caret-size;
+        border-top: $select2-border-size solid #e0e5e9;
+        bottom: -$select2-border-size;
     }
 
     &::after {
-        border-top: $dropdown-caret-size solid #ffffff;
-        bottom: -#{$dropdown-caret-size - 1};
+        border-top: $select2-border-size solid #ffffff;
+        bottom: -#{$select2-border-size - 1};
     }
 }
 
