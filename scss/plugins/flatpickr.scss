@@ -15,6 +15,14 @@
         max-width: 539px;
         padding: 44px;
     }
+
+    // Remove caret from flatpickr calendar
+    &::before {
+        content: none;
+    }
+    &::after {
+        content: none;
+    }
 }
 
 .flatpickr-rContainer {
