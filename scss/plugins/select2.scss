@@ -238,28 +238,8 @@ span.select2-selection.select2-selection--single {
 .select2-dropdown--below {
     margin-top: 0.6rem !important;
 
-    &::before {
-        border-bottom: $select2-border-size solid #e0e5e9;
-        top: -$select2-border-size;
-    }
-
-    &::after {
-        border-bottom: $select2-border-size solid #ffffff;
-        top: -#{$select2-border-size - 1};
-    }
 }
 
-.select2-dropdown--above {
-    &::before {
-        border-top: $select2-border-size solid #e0e5e9;
-        bottom: -$select2-border-size;
-    }
-
-    &::after {
-        border-top: $select2-border-size solid #ffffff;
-        bottom: -#{$select2-border-size - 1};
-    }
-}
 
 /* dropdown open */
 .select2-container--default.select2-container--open.select2-container--below
