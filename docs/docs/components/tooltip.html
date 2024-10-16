@@ -8,7 +8,7 @@
 <html class="no-js"><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Spinner - Weglot Design Styleguide</title>
+    <title>Tooltip - Weglot Design Styleguide</title>
     <meta name="description"
           content="This is the Weglot Design styleguide.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,13 +68,13 @@
         
         <li class="nav-item"><a href="/design/docs/components/progress.html" class="nav-link ">Progress</a></li>
         
-        <li class="nav-item"><a href="/design/docs/components/spinner.html" class="nav-link active">Spinner</a></li>
+        <li class="nav-item"><a href="/design/docs/components/spinner.html" class="nav-link ">Spinner</a></li>
         
         <li class="nav-item"><a href="/design/docs/components/tables.html" class="nav-link ">Tables</a></li>
         
         <li class="nav-item"><a href="/design/docs/components/timeline.html" class="nav-link ">Timelines</a></li>
         
-        <li class="nav-item"><a href="/design/docs/components/tooltip.html" class="nav-link ">Tooltip</a></li>
+        <li class="nav-item"><a href="/design/docs/components/tooltip.html" class="nav-link active">Tooltip</a></li>
         
     </ul>
 </div>
@@ -84,7 +84,7 @@
         <div class="col-10 sg-content card">
             <div>
                 <div class="card-body">
-                    <h1>Spinner</h1>
+                    <h1>Tooltip</h1>
                 </div>
                 <div class="card-body">
                     
@@ -141,44 +141,72 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <article class="sg-component">
     <header class="sg-component__header">
-        <h2 class="sg-component__title">Spinner</h2>
+        <h2 class="sg-component__title">Tooltips</h2>
     </header>
     <div class="sg-component__body">
         <div class="sg-component__display">
-            <span class="spinner-border spinner-border text-danger" role="status"></span>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
 
-<span class="spinner-border spinner-border-sm text-primary" role="status"></span>
 
-<span class="spinner-border spinner-border-xs text-warning" role="status"></span>
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 
         </div>
         <div class="sg-component__source">
-            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"spinner-border spinner-border text-danger"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tooltip on top"</span><span class="nt">&gt;</span>
+  Tooltip on top
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Tooltip on right"</span><span class="nt">&gt;</span>
+  Tooltip on right
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Tooltip on bottom"</span><span class="nt">&gt;</span>
+  Tooltip on bottom
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Tooltip on left"</span><span class="nt">&gt;</span>
+  Tooltip on left
+<span class="nt">&lt;/button&gt;</span>
 
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"spinner-border spinner-border-sm text-primary"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span>
 
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"spinner-border spinner-border-xs text-warning"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
+<span class="nt">&lt;script&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">[data-toggle="tooltip"]</span><span class="dl">'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">()</span>
+    <span class="p">})</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
         </div>
     </div>
 </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
