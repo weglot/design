@@ -1,48 +1,48 @@
 .badge {
     line-height: $line-height-base;
 
-    &-primary {
-        background-color: mix($primary, white, 10%);
+    &.bg-primary {
+        background-color: mix($primary, white, 10%) !important;
         color: $primary;
     }
 
-    &-success {
-        background-color: mix($success, white, 10%);
+    &.bg-success {
+        background-color: mix($success, white, 10%) !important;
         color: $success;
     }
 
-    &-danger {
-        background-color: mix($danger, white, 10%);
+    &.bg-danger {
+        background-color: mix($danger, white, 10%) !important;
         color: $danger;
     }
 
-    &-warning {
-        background-color: mix($warning, white, 10%);
+    &.bg-warning {
+        background-color: mix($warning, white, 10%) !important;
         color: $warning;
     }
 
-    &-info {
-        background-color: mix($info, white, 10%);
+    &.bg-info {
+        background-color: mix($info, white, 10%) !important;
         color: $info;
     }
 
-    &-light {
-        background-color: $body-bg;
+    &.bg-light {
+        background-color: $body-bg !important;
         color: $dark;
     }
 
-    &-cyan {
-        background-color: $cyan;
+    &.bg-cyan {
+        background-color: $cyan !important;
         color: $dark;
     }
 
-    &-pink {
-        background-color: $pink;
+    &.bg-pink {
+        background-color: $pink !important;
         color: $dark;
     }
 
-    &-salmon {
-        background-color: $salmon;
+    &.bg-salmon {
+        background-color: $salmon !important;
         color: $dark;
     }
 }
