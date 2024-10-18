@@ -6,6 +6,10 @@
         color: $primary;
     }
 
+    &.bg-secondary {
+        color: $color-contrast-dark;
+    }
+
     &.bg-success {
         background-color: mix($success, white, 10%) !important;
         color: $success;
