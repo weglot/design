@@ -1,24 +1,14 @@
 @each $color, $value in $theme-colors {
     .alert-#{$color} {
         color: color-contrast($value);
+        //    @if (contrast-ratio($alert-background, $alert-color) < $min-contrast-ratio) {
+        //        $alert-color: mix($value, color-contrast($alert-background), abs($alert-color-scale));
+        //    }
+
+        background-color: $value;
     }
 }
 
 .alert-secondary {
     border: 1px solid #e0e5e9;
-}
-
-.alert-dismissible .close {
-    background-color: rgba(24, 22, 76, 0.15);
-    height: 100%;
-    border-top-right-radius: $alert-border-radius;
-    border-bottom-right-radius: $alert-border-radius;
-}
-
-.close {
-    opacity: 1;
-
-    &:focus {
-        color: unset;
-    }
 }
