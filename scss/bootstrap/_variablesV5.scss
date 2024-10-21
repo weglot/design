@@ -441,7 +441,7 @@ $position-values: (
 
 $body-text-align:           null !default;
 $body-color:                #434649;
-$body-bg:                   #f6f7fb;
+$body-bg:                   $white !default;;
 
 $body-secondary-color:      rgba($body-color, .75) !default;
 $body-secondary-bg:         $gray-200 !default;
@@ -655,12 +655,12 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-line-height:        $line-height-base;
+$headings-color:              $blue; //TODO: Handle dark mode?
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
@@ -1346,8 +1346,8 @@ $placeholder-opacity-min:           .2 !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+$card-spacer-y:                     1.5rem;
+$card-spacer-x:                     1.5rem;;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-title-color:                  null !default;
 $card-subtitle-color:               null !default;
@@ -1356,10 +1356,10 @@ $card-border-color:                 var(--#{$prefix}border-color-translucent) !d
 $card-border-radius:                var(--#{$prefix}border-radius) !default;
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
-$card-cap-padding-y:                $card-spacer-y * .5 !default;
+$card-cap-padding-y:                $card-spacer-y;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
-$card-cap-color:                    null !default;
+$card-cap-bg:                       null;
+$card-cap-color:                    $headings-color;
 $card-height:                       null !default;
 $card-color:                        null !default;
 $card-bg:                           var(--#{$prefix}body-bg) !default;
