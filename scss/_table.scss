@@ -7,11 +7,17 @@
         padding-left: 1.5rem;
     }
 
+    tr:last-child {
+        th, td {
+            border-bottom: 0;
+        }
+    }
+
     thead th {
         border: none;
         text-transform: uppercase;
         font-size: $h4-font-size;
-        padding: 0.75rem;
+        padding: $table-cell-padding-x 0.75rem;
         word-break: keep-all;
     }
     &.table-clickable tr {
