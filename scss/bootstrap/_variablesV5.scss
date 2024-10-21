@@ -74,7 +74,7 @@ $colors: (
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio:   4.5 !default;
+$min-contrast-ratio:  2 !default;
 
 // Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark:      #6f7588;
@@ -1563,7 +1563,7 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default; // 3x covers widt
 // scss-docs-end alert-variables
 
 // fusv-disable
-$alert-bg-scale:                -80% !default; // Deprecated in v5.2.0, to be removed in v6
+$alert-bg-scale:                0% !default; // Deprecated in v5.2.0, to be removed in v6
 $alert-border-scale:            -70% !default; // Deprecated in v5.2.0, to be removed in v6
 $alert-color-scale:             40% !default; // Deprecated in v5.2.0, to be removed in v6
 // fusv-enable
