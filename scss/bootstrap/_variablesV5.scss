@@ -449,7 +449,7 @@ $body-secondary-bg:         $gray-200 !default;
 $body-tertiary-color:       rgba($body-color, .5) !default;
 $body-tertiary-bg:          $gray-100 !default;
 
-$body-emphasis-color:       $black !default;
+$body-emphasis-color:       $blue;
 
 // Links
 //
@@ -545,7 +545,7 @@ $border-widths: (
 ) !default;
 $border-style:                solid !default;
 $border-color:                $gray-300 !default;
-$border-color-translucent:    rgba($black, .175) !default;
+$border-color-translucent:    $grayish;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -733,15 +733,15 @@ $mark-bg:                     $yellow-100 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y:        .5rem !default;
-$table-cell-padding-x:        .5rem !default;
+$table-cell-padding-y:        1.5rem;
+$table-cell-padding-x:        0.75rem;
 $table-cell-padding-y-sm:     .25rem !default;
 $table-cell-padding-x-sm:     .25rem !default;
 
 $table-cell-vertical-align:   top !default;
 
 $table-color:                 var(--#{$prefix}emphasis-color) !default;
-$table-bg:                    var(--#{$prefix}body-bg) !default;
+$table-bg:                    transparent;
 $table-accent-bg:             transparent !default;
 
 $table-th-font-weight:        null !default;
@@ -750,7 +750,7 @@ $table-striped-color:         $table-color !default;
 $table-striped-bg-factor:     .05 !default;
 $table-striped-bg:            rgba(var(--#{$prefix}emphasis-color-rgb), $table-striped-bg-factor) !default;
 
-$table-active-color:          $table-color !default;
+$table-active-color:          $body-color;
 $table-active-bg-factor:      .1 !default;
 $table-active-bg:             rgba(var(--#{$prefix}emphasis-color-rgb), $table-active-bg-factor) !default;
 
