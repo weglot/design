@@ -1,31 +1,36 @@
-<!DOCTYPE HTML>
-<head>
-    <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    <meta name="description"
-          content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- favicon.ico and apple-touch-icon.png in root directory -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"/>
-    <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
-</head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col-2">
-            {% include sidebar.html %}
-        </div>
-        <div class="col-10 sg-content card">
-            <div>
-                <div class="card-body">
-                    <h1>{{ page.title }}</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- favicon.ico and apple-touch-icon.png in root directory -->
+        <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+        <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    {% include sidebar.html %}
                 </div>
-                <div class="card-body">
-                    {{ content }}
+                <div class="col-10 sg-content card">
+                    <div>
+                        <div class="card-body">
+                            <h1>{{ page.title }}</h1>
+                        </div>
+                        <div class="card-body">
+                            {{ content }}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</body>
+
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+        </script>
+    </body>
 </html>
