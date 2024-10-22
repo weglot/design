@@ -16,6 +16,11 @@ collections:
 
 defaults:
   - scope:
+      path: "_docs/examples"
+    values:
+      type: example
+      layout: doc
+  - scope:
       path: "_docs/foundations"
     values:
       type: foundation

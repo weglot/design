@@ -23,5 +23,15 @@
         <li class="nav-item"><a href="{{ site.baseurl }}{{ entry.url }}" class="nav-link {% if entry.url == page.url %}active{% endif %}">{{ entry.title }}</a></li>
         {% endfor %}
     </ul>
+
+    {% assign components = site.docs | where: 'type', 'example' %}
+    <h6 class="px-3 mt-4 mb-1 text-muted text-uppercase">
+        <span>Examples</span>
+    </h6>
+    <ul class="nav flex-column">
+        {% for entry in components %}
+        <li class="nav-item"><a href="{{ site.baseurl }}{{ entry.url }}" class="nav-link {% if entry.url == page.url %}active{% endif %}">{{ entry.title }}</a></li>
+        {% endfor %}
+    </ul>
 </div>
 
