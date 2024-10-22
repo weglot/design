@@ -8,3 +8,6 @@ styleguide/.jekyll-cache
 docs/.jekyll-metadata
 docs/vendor
 .npmrc
+
+/dist/
+/docs/
