@@ -1571,7 +1571,7 @@ $alert-color-scale:             40% !default; // Deprecated in v5.2.0, to be rem
 // Progress bars
 
 // scss-docs-start progress-variables
-$progress-height:                   1rem !default;
+$progress-height:                   0.25rem;
 $progress-font-size:                $font-size-base * .75 !default;
 $progress-bg:                       var(--#{$prefix}secondary-bg) !default;
 $progress-border-radius:            var(--#{$prefix}border-radius) !default;
