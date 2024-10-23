@@ -34,6 +34,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Get Tag or Fallback
+        run: |
+          if [ -z "${GITHUB_REF#refs/tags/}" ]; then
+            echo "VERSION=latest" >> $GITHUB_ENV
+          else
+            echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+          fi
+          
       - name: Setup Ruby
         uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
         with:
@@ -48,7 +56,7 @@ jobs:
       - run: npm run build
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --destination ../docs/$VERSION
         working-directory: ./styleguide
         env:
           JEKYLL_ENV: production
@@ -56,7 +64,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-            path: docs/
+            path: docs/$VERSION
 
     # Deployment job
   deploy:
