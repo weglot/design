@@ -10,8 +10,6 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-    tags:
-        - '*'  # Trigger on tags like v1.0, v2.1, etc.
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -51,7 +49,7 @@ jobs:
       - run: npm run build
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "/${{ github.ref_name }}"  # Use tag name as baseurl
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         working-directory: ./styleguide
         env:
           JEKYLL_ENV: production
@@ -72,5 +70,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          path: docs/${{ github.ref_name }}  # Deploy documentation under tag-specific directory
