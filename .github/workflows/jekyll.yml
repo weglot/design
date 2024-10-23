@@ -13,7 +13,7 @@ on:
     tags:
         - '*'  # Trigger on tags like v1.0, v2.1, etc.
 
-  # Allows you to run this workflow manually from the Actions tab
+      # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
