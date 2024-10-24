@@ -1,10 +1,9 @@
 {
   "name": "@weglot/design",
-  "version": "2.6.3",
   "description": "Weglot Design provides a set of classes allowing you to easily reproduce the Weglot dashboard design",
   "scripts": {
-    "build": "sass --load-path=. --quiet-deps scss/:dist/css/ --style=compressed && npm run copyFont",
-    "copyFont": "node bin/copy-font.js ",
+    "build": "sass --load-path=. --quiet-deps scss/:dist/css/ --style=compressed && npm run copyFont --",
+    "copyFont": "node bin/copy-font.js",
     "stylelint": "stylelint scss --fix",
     "stylelint:ci": "stylelint scss"
   },

@@ -1,8 +1,6 @@
 title: Weglot Design Styleguide
 description: >-
   This is the Weglot Design styleguide.
-baseurl: "/design" # the subpath of your site, e.g. /blog
-url: "https://weglot.github.io"
 twitter_username: weglot
 github_username:  weglot
 
