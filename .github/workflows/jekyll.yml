@@ -24,18 +24,12 @@ jobs:
                 version:
                     - master
                     - 2.7.0
-                    - 2.6.3
 
         steps:
             -   name: Checkout
                 uses: actions/checkout@v4
                 with:
                     ref: ${{ matrix.version == 'master' && 'master' || matrix.version }}
-
-            -   name: Display SHA and Last Checkout
-                run: |
-                    echo "Commit SHA: $(git rev-parse HEAD)"
-                    echo "Checked out reference: $(git rev-parse --abbrev-ref HEAD || git describe --tags)"
 
             -   name: Setup Ruby
                 uses: ruby/setup-ruby@v1
@@ -50,7 +44,12 @@ jobs:
 
             -   run: npm install
 
-            -   run: npm run build docs/${{ matrix.version }}
+            -   run: |
+                    if [ "${{ matrix.version }}" == "master" ]; then
+                      npm run build docs/
+                    else
+                     npm run build docs/${{ matrix.version }}
+                    fi
 
             -   name: Build with Jekyll
                 run: |
@@ -62,6 +61,7 @@ jobs:
                 working-directory: ./styleguide
                 env:
                     JEKYLL_ENV: production
+            -   run: npm install
 
             -   name: Upload artifact
                 uses: actions/upload-artifact@v4
