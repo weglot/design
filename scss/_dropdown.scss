@@ -1,19 +1,18 @@
 .dropdown-toggle {
     cursor: pointer;
     font-weight: $btn-font-weight;
-    font-size: 90%;
 
     &::after {
         border: none !important;
         font-family: 'Material Icons';
         content: 'expand_more' !important;
         vertical-align: sub;
-        font-size: 18px;
+        line-height: 1;
         margin-left: 0;
     }
 }
 
-.show .dropdown-toggle::after {
+.show.dropdown-toggle::after {
     content: 'expand_less' !important;
 }
 
@@ -51,20 +50,7 @@ a.dropdown-toggle {
 
     &:hover,
     &.hover {
-        color: darken($body-color, $emphasized-link-hover-darken-percentage);
-    }
-}
-
-.dropdown-btn {
-    text-align: center;
-    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
-    margin-bottom: -$dropdown-padding-y;
-    border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
-}
-
-@each $color, $value in $theme-colors {
-    .dropdown-btn-#{$color} {
-        @include button-variant($value, $value);
+        color: $body-emphasis-color;
     }
 }
 

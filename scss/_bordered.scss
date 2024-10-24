@@ -19,6 +19,15 @@
     border: 1px solid #e0e5e9;
 }
 
+.table-bordered {
+    th,
+    td {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+
 .rounded {
     border-radius: 5px !important;
 }
