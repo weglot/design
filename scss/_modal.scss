@@ -7,10 +7,11 @@
 .modal-header {
     justify-content: center;
 
-    button {
+    .btn-close {
         position: absolute;
         right: 1.25rem;
         top: 1.25rem;
+        padding: 1rem;
     }
 }
 

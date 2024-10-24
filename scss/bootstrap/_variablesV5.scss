@@ -1528,8 +1528,8 @@ $modal-backdrop-opacity:            0.7;
 
 $modal-header-border-color:         var(--#{$prefix}border-color) !default;
 $modal-header-border-width:         $modal-content-border-width !default;
-$modal-header-padding-y:            $modal-inner-padding !default;
-$modal-header-padding-x:            $modal-inner-padding !default;
+$modal-header-padding-y:            0;
+$modal-header-padding-x:            1rem;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
 $modal-footer-bg:                   null !default;
