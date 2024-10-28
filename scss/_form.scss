@@ -1,5 +1,5 @@
 .form-group {
-    label:not(.custom-control-label) {
+    label:not(.form-check-label) {
         text-transform: uppercase;
         font-size: $font-size-sm;
         font-weight: $font-weight-bold;
@@ -8,69 +8,43 @@
     }
 }
 
-.custom-control {
+.form-label {
+    text-transform: uppercase;
+}
+
+.form-check {
+    cursor: pointer;
     padding-top: 4px;
     padding-bottom: 4px;
 }
 
-.custom-control-label {
-    color: $dark;
-}
-
-.custom-switch .custom-control-label {
+.form-check-input {
+    height: $form-check-input-width;
     cursor: pointer;
-    &::before {
+}
+
+.form-check-label {
+    color: $dark;
+    vertical-align: middle;
+}
+
+.form-switch {
+    .form-check-input:not(:checked) {
         background-color: $grayish;
-        border: 1px solid $input-border-color !important;
-    }
-    &::after {
-        background-color: white;
-        box-shadow: 0 1px 2px 0 rgba(1, 1, 2, 0.2);
-        font-family: 'Material Icons' !important;
-        content: 'clear';
-        color: $body-color;
-        padding: 2px;
-        line-height: 1;
-        font-size: 12px;
     }
 }
 
-.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
-    border: 1px solid $blue-bright !important;
-}
-
-.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-    content: 'check';
-    color: $blue-bright;
-}
-
-.custom-control-input-secondary:checked ~ .custom-control-label::before {
-    border-color: #fff;
-}
-
-.custom-switch + .form-text {
-    padding-left: $custom-switch-width + $custom-control-gutter;
-}
-
-.custom-radio {
-    .custom-control-input:checked ~ .custom-control-label::before {
-        background-color: white;
-    }
-
-    .custom-control-label::after {
-        background: no-repeat 50% / 70% 70%;
-    }
-}
-
-.input-group {
+.input-group-merge {
     .btn-link {
         position: absolute;
         right: 0;
         font-weight: $btn-font-weight;
         padding: $input-btn-padding-y;
     }
-    .input-group-append {
-        z-index: 4;
+    &.input-group-text {
+        z-index: 5;
+        border: 0;
+        padding: 0;
     }
 }
 
@@ -137,7 +111,6 @@
     left: 0;
 }
 
-.custom-select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
+.form-group {
+    margin-bottom: 1rem;
 }

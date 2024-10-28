@@ -1,18 +1,20 @@
 ---
 title: Input with button appended
 category: form
-category_order: 2
+category_order: 3
 ---
 <form>
     <div class="form-group">
         <label for="password">Password</label>
         <div class="input-group">
-            <div class="input-group-append">
+            <input id="password" name="_password" type="password" class="form-control" required=""
+                   style="border-radius: 0.25rem;">
+            <div class="input-group-merge input-group-text">
                 <a class="btn btn-link" href="#">
                     Forgot?
                 </a>
             </div>
-            <input id="password" name="_password" type="password" class="form-control" required="" style="border-radius: 0.25rem;">
         </div>
+
     </div>
 </form>
