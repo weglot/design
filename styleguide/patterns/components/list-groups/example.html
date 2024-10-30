@@ -1,0 +1,54 @@
+---
+title: Example list group
+category: list-group
+category_order: 2
+---
+<div class="col-4 bg-dark">
+    <div class="list-group list-group-flush">
+        <span class="list-group-item list-group-item-action pl-0 pr-1 border-0" tabindex="0">
+            <span class="collapse-btn collapsed" data-toggle="collapse" data-target="#urlCollapse0"></span>
+            <span class="text-truncate text-white" style="width: 190px; display: inline-block; vertical-align: middle;">
+                <span>
+                    /index
+                </span>
+            </span>
+
+            <a aria-label="Options" role="button" class="dropdown actions-item" data-toggle="dropdown" tabindex="0">
+                <i class="material-icons" aria-hidden="true">more_vert</i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right pull-right">
+                <a href="#" class="dropdown-item" target="_blank" title="See in Visual Editor" aria-label="See in Visual Editor">
+                    See in Visual Editor <i class="material-icons">open_in_new</i>
+                </a>
+                <a href="#" class="dropdown-item" title="Open this URL" aria-label="Open this URL"> Open this URL <i class="material-icons">open_in_new</i> </a>
+            </div>
+        </span>
+
+        <span class="list-group-item list-group-item-action pl-0 pr-1 border-0" tabindex="0">
+            <span class="collapse-btn collapsed" data-toggle="collapse" data-target="#urlCollapse2"></span>
+            <span class="text-truncate text-white" style="width: 190px; display: inline-block; vertical-align: middle;">
+                <span style="text-decoration: line-through;" data-toggle="tooltip" tabindex="0" data-placement="bottom" data-original-title="This URL is excluded">
+                    /url-de-test
+                </span>
+            </span>
+
+            <a aria-label="Options" role="button" class="dropdown actions-item" data-toggle="dropdown" tabindex="0">
+                <i class="material-icons" aria-hidden="true">more_vert</i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right pull-right">
+                <a href="#" class="dropdown-item" title="See in Visual Editor" aria-label="See in Visual Editor">
+                    See in Visual Editor <i class="material-icons">open_in_new</i>
+                </a>
+                <a href="#" class="dropdown-item" title="Open this URL" aria-label="Open this URL"> Open this URL <i class="material-icons">open_in_new</i> </a>
+            </div>
+        </span>
+    </div>
+</div>
+
+
+
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
