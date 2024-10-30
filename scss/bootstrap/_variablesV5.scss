@@ -1161,7 +1161,7 @@ $zindex-levels: (
 // Navs
 
 // scss-docs-start nav-variables
-$nav-link-padding-y:                1rem;
+$nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
@@ -1196,10 +1196,11 @@ $navbar-padding-y:                  0;
 $navbar-padding-x:                  $spacer;
 
 $navbar-nav-link-padding-x:         1.25rem;
+$navbar-nav-link-padding-y:         1.125rem;
 
-$navbar-brand-font-size:            $font-size-lg !default;
+$navbar-brand-font-size:            $font-size-base;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
-$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
+$nav-link-height:                   $font-size-base * $line-height-base + $navbar-nav-link-padding-y * 2;
 $navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;
 $navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) * .5 !default;
 $navbar-brand-margin-end:           1rem !default;

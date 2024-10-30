@@ -28,7 +28,7 @@
     }
     &-secondary {
         .progress-round-bar::before {
-            background: conic-gradient(#fff calc(var(--percentage) * 1%), $gray-400 0);
+            background: conic-gradient($secondary calc(var(--percentage) * 1%), $gray-600 0);
         }
     }
 }
