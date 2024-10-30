@@ -13,21 +13,37 @@ category_order: 1
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1">
     </div>
+
     <div class="form-group">
-        <div class="custom-control custom-checkbox custom-switch">
-            <input type="checkbox" class="custom-control-input" id="exampleCheck1">
-            <label class="checkbox-custom switch custom-control-label" for="exampleCheck1">Check me out</label>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
     </div>
 
     <div class="form-group">
-        <div class="custom-control custom-radio">
-            <input type="radio" id="exampleRadio1" class="custom-control-input">
-            <label class="custom-control-label" for="exampleRadio1" tabindex="0">Check me out</span></label>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Check me out</label>
         </div>
     </div>
 
-    <button type="submit" class="btn btn-primary float-right">Submit</button>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Default radio
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                Default checked radio
+            </label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary float-end">Submit</button>
     <br/>
     <br/>
 </form>

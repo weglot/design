@@ -15,10 +15,10 @@
     background-color: $grayish;
     color: inherit;
     font-weight: $font-weight-bold;
-    margin-right: $label-margin-bottom;
-    margin-left: $label-margin-bottom;
+    margin-right: $form-label-margin-bottom;
+    margin-left: $form-label-margin-bottom;
     font-size: $font-size-sm;
-    padding: $table-cell-padding-sm $input-btn-padding-x-sm $input-btn-padding-y-sm;
+    padding: $input-btn-padding-x-sm $input-btn-padding-y-sm;
     text-transform: uppercase;
 }
 
