@@ -1,4 +1,6 @@
 .form-group {
+    margin-bottom: 1rem;
+
     label:not(.form-check-label) {
         text-transform: uppercase;
         font-size: $font-size-sm;
@@ -109,8 +111,4 @@
     text-align: center;
     font-size: 24px;
     left: 0;
-}
-
-.form-group {
-    margin-bottom: 1rem;
 }
