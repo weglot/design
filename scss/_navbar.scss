@@ -110,11 +110,3 @@
         }
     }
 }
-
-#sub-navbar {
-    .nav-item {
-        &.active .nav-link:after {
-            content: none !important;
-        }
-    }
-}
