@@ -55,18 +55,11 @@
 
         .nav-link {
             font-weight: normal;
-            //margin: 5px 0;
-            //padding: 5px 0;
             line-height: 1.5;
             border-radius: $btn-border-radius;
-            transition:
-                color 0.15s ease-in-out,
-                background-color 0.15s ease-in-out,
-                border-color 0.15s ease-in-out,
-                box-shadow 0.15s ease-in-out;
 
             &:hover {
-                background-color: $gray-200;
+                background-color: $nav-link-hover-background-color;
             }
         }
     }

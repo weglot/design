@@ -1169,6 +1169,7 @@ $nav-link-font-size: null !default;
 $nav-link-font-weight: null !default;
 $nav-link-color: var(--#{$prefix}link-color) !default;
 $nav-link-hover-color: var(--#{$prefix}link-hover-color) !default;
+$nav-link-hover-background-color: $gray-200;
 $nav-link-transition:
     color 0.15s ease-in-out,
     background-color 0.15s ease-in-out,
