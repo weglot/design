@@ -3,20 +3,19 @@
 }
 
 .btn-icon {
-    padding: $input-btn-padding-y;
+    padding: ($btn-padding-y + $btn-font-size) * 0.5;
     line-height: 0 !important;
     border-radius: 50% !important;
-
-    & .material-icons {
-        font-size: 16px;
-    }
+    font-size: $font-size-base;
 
     &.btn-lg {
-        padding: $input-btn-padding-y-lg;
+        padding: ($btn-padding-y-lg + $btn-font-size-lg) * 0.5;
+        font-size: $font-size-lg;
     }
 
     &.btn-sm {
-        padding: $input-btn-padding-y-sm
+        padding: ($btn-padding-y-sm + $btn-font-size-sm) * 0.5;
+        font-size: $font-size-sm;
     }
 }
 
