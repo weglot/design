@@ -10,6 +10,14 @@
     & .material-icons {
         font-size: 16px;
     }
+
+    &.btn-lg {
+        padding: $input-btn-padding-y-lg;
+    }
+
+    &.btn-sm {
+        padding: $input-btn-padding-y-sm
+    }
 }
 
 .btn-primary,
