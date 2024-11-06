@@ -1,5 +1,8 @@
-.dropdown-toggle {
+[data-bs-toggle='dropdown'] {
     cursor: pointer;
+}
+
+.dropdown-toggle {
     font-weight: $btn-font-weight;
 
     &::after {
