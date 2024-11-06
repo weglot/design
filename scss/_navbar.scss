@@ -42,7 +42,7 @@
         }
     }
 
-    @media (min-width: 768px) {
+    @include media-breakpoint-up(md) {
         .nav-item {
             padding-top: $navbar-nav-link-padding-y - $nav-link-padding-y;
             padding-bottom: $navbar-nav-link-padding-y - $nav-link-padding-y;
