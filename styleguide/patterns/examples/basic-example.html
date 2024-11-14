@@ -1,28 +1,173 @@
 ---
-title: Alerts
+title: Card with title, pagination, actions button and search field
 category: example
 ---
-<div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-</div>
-<div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-</div>
-<div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-</div>
-<div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-</div>
-<div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-</div>
-<div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-</div>
-<div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-</div>
-<div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
+
+<div class="container py-3 px-3" style="background-color: #f6f7fb;">
+    <div class="row">
+        <div class="col">
+            <header class="content__title d-flex">
+                <h1>Projects</h1>
+                <div class="actions d-flex align-items-center">
+                    <div class="form-group has-search mb-0 ml-2">
+                        <i class="material-icons form-control-feedback" aria-hidden="true">search</i>
+                        <input id="projects-search" type="text" class="form-control" placeholder="Search a project" />
+                    </div>
+                    <div class="dropdown">
+                        <button aria-label="Actions" class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Actions
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="d-flex justify-content-between">
+                                <a class="dropdown-item" href="#">
+                                    Import
+                                </a>
+                            </li>
+
+                            <li class="d-flex justify-content-between">
+                                <a href="#" class="dropdown-item">
+                                    Export
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">Create project</a>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body d-flex">
+                <span class="h2"><span class="text-primary">10</span> result(s)</span>
+            </div>
+        <table class="table table-hover">
+                <thead class="table-active">
+                    <tr role="row">
+                        <th role="columnheader">Name</th>
+                        <th role="columnheader">Total words</th>
+                        <th role="columnheader">Languages</th>
+                        <th role="columnheader">Manual translations</th>
+                        <th role="columnheader"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr tabindex="0">
+                        <td>
+                            <h3 class="d-inline-flex align-middle">Connect</h3>
+                            <br />
+                            <small class="text-muted">https://www.weglot-team-5.com</small>
+                        </td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>
+                            <span>
+                                1 / 5
+                                <span class="h3 text-primary float-end">20%</span>
+                            </span>
+                            <div class="progress mt-1">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar" role="progressbar" style="width: 20%;"></div>
+                            </div>
+                        </td>
+                        <td class="text-end">
+                            <div class="dropdown">
+                                <a aria-expanded="false" aria-label="Project's actions" class="actions-item dropdown-toggle dropdown-no-caret" data-bs-toggle="dropdown" role="button">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">See</a>
+                                    <a class="dropdown-item" href="#" title="Delete project">Delete</a>
+                                    <a class="dropdown-item" href="#" title="Transfer project">Transfer</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr tabindex="0">
+                        <td>
+                            <h3 class="d-inline-flex align-middle">Connect</h3>
+                            <br />
+                            <small class="text-muted">https://www.weglot-team-5.com</small>
+                        </td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>
+                            <span>
+                                1 / 5
+                                <span class="h3 text-primary float-end">20%</span>
+                            </span>
+                            <div class="progress mt-1">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar" role="progressbar" style="width: 20%;"></div>
+                            </div>
+                        </td>
+                        <td class="text-end">
+                            <div class="dropdown">
+                                <a aria-expanded="false" aria-label="Project's actions" class="actions-item dropdown-toggle dropdown-no-caret" data-bs-toggle="dropdown" role="button">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">See</a>
+                                    <a class="dropdown-item" href="#" title="Delete project">Delete</a>
+                                    <a class="dropdown-item" href="#" title="Transfer project">Transfer</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr tabindex="0">
+                        <td>
+                            <h3 class="d-inline-flex align-middle">Connect</h3>
+                            <br />
+                            <small class="text-muted">https://www.weglot-team-5.com</small>
+                        </td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>
+                            <span>
+                                1 / 5
+                                <span class="h3 text-primary float-end">20%</span>
+                            </span>
+                            <div class="progress mt-1">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar" role="progressbar" style="width: 20%;"></div>
+                            </div>
+                        </td>
+                        <td class="text-end">
+                            <div class="dropdown">
+                                <a aria-expanded="false" aria-label="Project's actions" class="actions-item dropdown-toggle dropdown-no-caret" data-bs-toggle="dropdown" role="button">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">See</a>
+                                    <a class="dropdown-item" href="#" title="Delete project">Delete</a>
+                                    <a class="dropdown-item" href="#" title="Transfer project">Transfer</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+    </table>
+    </div>
+
+    <nav class="pt-2">
+        <ul class="pagination justify-content-center mx-auto mb-0">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" data-page="0" tabindex="0">&lt;-</a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#" tabindex="0" data-page="1">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" tabindex="0" data-page="2">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" tabindex="0" data-page="3">3</a>
+            </li>
+            <li class="page-item disabled"><a class="page-link" tabindex="0">...</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" tabindex="0" data-page="5">5</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" tabindex="0">-&gt;</a>
+            </li>
+        </ul>
+    </nav>
+
 </div>
