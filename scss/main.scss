@@ -23,3 +23,7 @@
 @import 'popover';
 @import 'breadcrumb';
 @import 'progress';
+
+.text-muted {
+    color: $text-muted !important;
+}
