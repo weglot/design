@@ -57,10 +57,6 @@
             font-weight: normal;
             line-height: 1.5;
             border-radius: $btn-border-radius;
-
-            &:hover {
-                background-color: $nav-link-hover-background-color;
-            }
         }
     }
 }
@@ -85,6 +81,7 @@
 .nav-link {
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     i {
         margin-right: 6px;
@@ -95,10 +92,12 @@
     }
 }
 
-.navbar:not(.navbar-dark) {
-    .nav-link {
-        :hover {
-            background-color: $gray-200;
+@include media-breakpoint-up(md) {
+    .navbar:not(.navbar-dark) {
+        .nav-link {
+            &:hover {
+                background-color: $nav-link-hover-background-color;
+            }
         }
     }
 }
