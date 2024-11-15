@@ -656,11 +656,11 @@ $headings-color: $blue; //TODO: Handle dark mode?
 // scss-docs-start display-headings
 $display-font-sizes: (
     1: 5rem,
-    2: 4.5rem,
-    3: 4rem,
-    4: 3.5rem,
-    5: 3rem,
-    6: 2.5rem,
+    2: 4rem,
+    3: 3rem,
+    4: 2rem,
+    5: 1rem,
+    6: 0.5rem,
 ) !default;
 
 $display-font-family: null !default;
@@ -1424,7 +1424,7 @@ $tooltip-max-width: 280px;
 $tooltip-color: var(--#{$prefix}body-bg) !default;
 $tooltip-bg: $blue;
 $tooltip-border-radius: var(--#{$prefix}border-radius) !default;
-$tooltip-opacity: 0.9 !default;
+$tooltip-opacity: 1;
 $tooltip-padding-y: $spacer * 0.25 !default;
 $tooltip-padding-x: $spacer * 0.5 !default;
 $tooltip-margin: null !default; // TODO: remove this in v6
