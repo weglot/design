@@ -15,11 +15,12 @@
     background-color: $grayish;
     color: inherit;
     font-weight: $font-weight-bold;
-    margin-right: $form-label-margin-bottom;
-    margin-left: $form-label-margin-bottom;
+    margin-right: $form-text-margin-top;
+    margin-left: $form-text-margin-top;
     font-size: $font-size-sm;
-    padding: $input-btn-padding-x-sm $input-btn-padding-y-sm;
+    padding: .3rem $input-btn-padding-x-sm $input-btn-padding-y-sm;
     text-transform: uppercase;
+    border-radius: $border-radius;
 }
 
 .granularity-input.active {
