@@ -698,7 +698,7 @@ $hr-height: null !default; // Deprecated in v5.2.0
 
 $hr-border-color: $border-color;
 $hr-border-width: var(--#{$prefix}border-width) !default;
-$hr-opacity: 0.25 !default;
+$hr-opacity: 1;
 
 // scss-docs-start vr-variables
 $vr-border-width: var(--#{$prefix}border-width) !default;
