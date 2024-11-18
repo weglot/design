@@ -25,13 +25,13 @@ $select2-border-size: 10px;
     .select2-selection__arrow::after {
         font-family: 'Material Icons';
         content: 'expand_more' !important;
-        line-height: 44.5px;
+        line-height: $btn-line-height;
         font-size: 18px;
     }
 
     // Single select
     .select2-selection--single .select2-selection__rendered {
-        line-height: 44.5px !important;
+        line-height: $btn-line-height !important;
     }
 
     // multiple select
@@ -41,7 +41,7 @@ $select2-border-size: 10px;
 
     .select2-selection,
     .select2-selection__arrow {
-        min-height: 44.5px;
+        min-height: $btn-line-height;;
     }
 
     .select2-selection__rendered {
@@ -164,7 +164,7 @@ span.select2-selection.select2-selection--single {
     &::before {
         // search icon
         position: absolute;
-        line-height: 44.5px;
+        line-height: $btn-line-height;;
         font-family: 'Material Icons';
         content: 'search';
     }
