@@ -25,13 +25,13 @@ $select2-border-size: 10px;
     .select2-selection__arrow::after {
         font-family: 'Material Icons';
         content: 'expand_more' !important;
-        line-height: $btn-line-height;
+        line-height: 43px;
         font-size: 18px;
     }
 
     // Single select
     .select2-selection--single .select2-selection__rendered {
-        line-height: $btn-line-height !important;
+        line-height: 43px !important;
     }
 
     // multiple select
@@ -41,7 +41,7 @@ $select2-border-size: 10px;
 
     .select2-selection,
     .select2-selection__arrow {
-        min-height: $btn-line-height;;
+        min-height: 43px;
     }
 
     .select2-selection__rendered {
@@ -164,7 +164,7 @@ span.select2-selection.select2-selection--single {
     &::before {
         // search icon
         position: absolute;
-        line-height: $btn-line-height;;
+        line-height: 43px;
         font-family: 'Material Icons';
         content: 'search';
     }
