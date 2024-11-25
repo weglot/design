@@ -31,3 +31,11 @@
         @include button-variant($value, $value);
     }
 }
+
+@each $color, $value in $theme-colors {
+    $background: $value;
+    $hover-bg: if($color == $color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount));
+    .swal-button:hover.btn-#{$color}:hover {
+        background-color: $hover-bg;
+    }
+}
