@@ -52,6 +52,12 @@
     }
 }
 
+.dropdown-menu {
+    .select2-container {
+        margin-left: 0;
+    }
+}
+
 .actions-item {
     font-size: 20px;
     color: $body-color;
