@@ -43,18 +43,12 @@
     text-align: right;
 
     .btn,
-    .select2-container {
+    [role="button"] .select2-container {
         margin-left: 0.75rem;
     }
 
     .actions-item {
         margin-left: 1rem;
-    }
-}
-
-.dropdown-menu {
-    .select2-container {
-        margin-left: 0;
     }
 }
 
