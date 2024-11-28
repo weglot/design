@@ -178,7 +178,7 @@ span.select2-selection.select2-selection--single {
     border-radius: $btn-border-radius !important;
     min-width: 100%;
     font-weight: 500;
-    color: rgb(111, 117, 136);
+    color: $body-emphasis-color;
     box-shadow: $btn-box-shadow;
     transition: $btn-transition;
 
@@ -187,13 +187,13 @@ span.select2-selection.select2-selection--single {
     }
 
     .select2-selection__rendered {
-        color: rgb(111, 117, 136) !important;
+        color: $body-emphasis-color !important;
         padding: $input-btn-padding-y 2.3rem $input-btn-padding-y $input-btn-padding-x !important;
         line-height: 1.5 !important;
         text-align: left;
 
         &:before {
-            color: rgb(111, 117, 136);
+            color: $body-emphasis-color;
         }
     }
 }
