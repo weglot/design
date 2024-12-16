@@ -32,3 +32,25 @@
         }
     }
 }
+
+.progress-round-dark {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background-color: $gray-700;
+
+    .progress-round-bar::before {
+        --percentage: var(--value);
+        content: '';
+        position: absolute;
+        top: 8%;
+        left: 7%;
+        width: 86%;
+        height: 86%;
+        background: conic-gradient($gray-700 calc(var(--percentage) * 1%), $gray-200 0);
+        border-radius: 50%;
+    }
+}
