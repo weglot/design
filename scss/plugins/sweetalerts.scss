@@ -42,4 +42,9 @@
     .swal-button:hover.btn-#{$color}:hover {
         background-color: $hover-bg;
     }
+    .swal-button:focus.btn-#{$color}:focus {
+        border-color: var(--bs-btn-hover-border-color);
+        outline: 0;
+        box-shadow: var(--bs-btn-focus-box-shadow);
+    }
 }
