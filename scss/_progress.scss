@@ -10,18 +10,18 @@
     position: relative;
     overflow: hidden;
     display: grid;
-    place-items: center;
     background: $progress-bar-bg;
 
     .progress-round-bar::before {
         --percentage: var(--value);
         content: '';
         position: absolute;
-        top: 7%;
-        left: 7%;
+        top: 50%;
+        left: 50%;
         width: 86%;
         height: 86%;
         border-radius: 50%;
+        transform: translate(-50%, -50%);
         background: conic-gradient($progress-bar-bg calc(var(--percentage) * 1%), $progress-bg 0);
     }
     &-secondary {
