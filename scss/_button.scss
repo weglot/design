@@ -1,3 +1,22 @@
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+      @include button-variant(
+        $value,
+        $value,
+        $disabled-background: '#d9d9d9',
+        $disabled-border: $border-color,
+        $disabled-color: $light
+      )
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+
 .btn-link {
     font-weight: 500;
 }
@@ -24,12 +43,6 @@
     &:hover {
         background-color: $blue;
         border-color: $blue;
-    }
-
-    &.disabled,
-    &:disabled {
-        background-color: $primary;
-        border-color: $primary;
     }
 }
 
