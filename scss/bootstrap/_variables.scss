@@ -50,6 +50,7 @@ $cyan: #c2e3fb;
 $salmon: #fdcbc3;
 $blue-bright: #473ae0;
 $grayish: #ecedf0;
+$magenta: #cc1a85;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -69,6 +70,7 @@ $colors: (
     'gray': $gray-600,
     'gray-dark': $gray-800,
     'salmon': $salmon,
+    'magenta': $magenta,
 ) !default;
 // scss-docs-end colors-map
 
@@ -326,6 +328,7 @@ $theme-colors: (
     'pink': $pink,
     'cyan': $cyan,
     'salmon': $salmon,
+    'magenta': $magenta,
 ) !default;
 // scss-docs-end theme-colors-map
 
