@@ -1,6 +1,7 @@
 node_modules
 .idea
 .DS_Store
+.claude/settings.local.json
 
 docs/_site
 docs/.sass-cache
