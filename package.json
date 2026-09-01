@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "codemirror": "^6.0.2",
     "dropzone": "^5.5.1",
     "jquery-flexdatalist": "^2.2.4",
     "material-icons": "^1.13.1",
